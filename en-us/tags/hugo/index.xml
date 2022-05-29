@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on long time</title>
+    <link>https://hugo-theme-luna.imiku.me/en-us/tags/hugo/</link>
+    <description>Recent content in Hugo on long time</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 02 May 2022 13:12:47 +0200</lastBuildDate><atom:link href="https://hugo-theme-luna.imiku.me/en-us/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shortcodes</title>
+      <link>https://hugo-theme-luna.imiku.me/en-us/2022/05/02/shortcodes.html/</link>
+      <pubDate>Mon, 02 May 2022 13:12:47 +0200</pubDate>
+      
+      <guid>https://hugo-theme-luna.imiku.me/en-us/2022/05/02/shortcodes.html/</guid>
+      <description>Some shortcode examples</description>
+    </item>
+    
+  </channel>
+</rss>

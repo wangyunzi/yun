@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="lang-zh-cn"><head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Hugo,Hugo Theme,Luna," />
+    <meta name="description" content="Hugo 文章加密测试" />
+    <meta itemprop="description" content="Hugo 文章加密测试" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta itemprop="name" content="长街短梦" />
+    <link href="https://hugo-theme-luna.imiku.me/index.xml" title="长街短梦" type="application/rss+xml" rel="alternate" />
+    <title>长街短梦</title><link rel="stylesheet" href="/main.8203a6c942fdd82a43ce5398736460463856111cbd1d2b1c9f143acb2a8a0005.css" integrity="sha256-ggOmyUL92CpDzlOYc2RgRjhWERy9HSscnxQ6yyqKAAU=" /><meta property="og:site_name" content="长街短梦" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="加密文章测试" />
+    <meta property="og:description" content="Hugo 文章加密测试" />
+    <meta property="og:url" content="https://hugo-theme-luna.imiku.me/2022/04/09/hugo-encrypt.html/" />
+    <meta property="og:image" content="https://i.pinimg.com/736x/13/2b/cb/132bcb6a64927659c6866758885fd57d.jpg" />
+    <meta property="article:publisher" content="https://hugo-theme-luna.imiku.me/2022/04/09/hugo-encrypt.html/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="长街短梦" />
+    <meta name="twitter:description" content="Hugo 文章加密测试" />
+    <meta name="twitter:url" content="https://hugo-theme-luna.imiku.me/2022/04/09/hugo-encrypt.html/" />
+    <meta name="twitter:image" content="https://i.pinimg.com/736x/13/2b/cb/132bcb6a64927659c6866758885fd57d.jpg" />
+    <meta name="twitter:site" content="@王云子" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1280" />
+    <meta name="theme-color" content="#B0E0E6" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="长街短梦">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white"><meta property="article:published_time" content="2022-04-09T02:49:13&#43;02:00" /><meta property="article:modified_time" content="2022-05-29T18:43:11&#43;08:00" /><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /><link rel="manifest" href="/manifest.json" /><link href="/icon.png" rel="shortcut icon" />
+    <link href="/icon.png" rel="Bookmark" />
+    <link rel="apple-touch-icon" href="/icon.png" /><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "加密文章测试",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https:\/\/hugo-theme-luna.imiku.me\/2022\/04\/09\/hugo-encrypt.html\/"
+  },"image": {
+    "@type": "ImageObject",
+    "url": "https:\/\/hugo-theme-luna.imiku.me\/cover.png",
+    "width": 1000 ,
+    "height": 519 },"genre": "posts","wordcount": 215 ,
+  "url": "https:\/\/hugo-theme-luna.imiku.me\/2022\/04\/09\/hugo-encrypt.html\/","datePublished": "2022-04-09T02:49:13\u002b02:00","dateModified": "2022-05-29T18:43:11\u002b08:00","author": {
+    "@type": "Person",
+    "name": "王云子"
+  },"description": ""
+}
+</script>
+
+</head>
+<body class="dark:bg-darkBg dark:text-darkText"><div class="relative mx-auto shadow-lg md:max-w-4xl xl:max-w-4xl 2xl:max-w-4xl">
+            <div class="main flex flex-col justify-between bg-white dark:bg-darkFg"><header class="relative">
+    <nav id="nav" class="navbar top-0 z-10 flex items-center border-b px-5 py-6 dark:border-darkBorder md:px-10">
+        <div class="route-items flex w-full items-center justify-around"><a
+                    title="首页"
+                    data-active-link="/"
+                    href="/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-home flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">首页</span>
+                </a><a
+                    title="关于我"
+                    data-active-link="/about/"
+                    href="/about/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-heart flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">关于我</span>
+                </a><a
+                    title="朋友们"
+                    data-active-link="/links/"
+                    href="/links/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-people flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">朋友们</span>
+                </a><a
+                    title="归档"
+                    data-active-link="/archives/"
+                    href="/archives/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-bar-chart flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">归档</span>
+                </a><a
+                    title="推特"
+                    data-active-link="/twitter/"
+                    href="/twitter/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-twitter flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">推特</span>
+                </a><a
+                    title="GitHub"
+                    data-active-link="/github/"
+                    href="/github/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-github flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">GitHub</span>
+                </a><a
+                    title=""
+                    data-active-link="https://yunzi.vercel.app/"
+                    href="https://yunzi.vercel.app/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-navigation-2-outline flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden"></span>
+                </a><a
+                    title="搜索"
+                    data-active-link="/search/"
+                    href="/search/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-search flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">搜索</span>
+                </a>
+        </div>
+    </nav>
+</header>
+<div class="dark-mode-switch absolute right-0 top-0 z-10 cursor-pointer pr-2 pt-2 text-xl leading-none">
+    <i class="eva eva-moon opacity-20 dark:opacity-70"></i>
+</div>
+<main class="relative flex flex-grow" id="swup">
+                    <div class="w-full type-posts layout-"><div class="relative h-full">
+        <div class="relative h-full">
+            <div class="page-view-article flex h-full flex-col bg-white dark:bg-darkFg">
+                <div class="relative"><div>
+                            <div class="-mb-2 w-full p-6 pb-0 text-3xl">
+                                加密文章测试
+                            </div>
+                        </div></div>
+                <div class="article-info border-b p-6 pb-3 text-sm dark:border-darkBorder">
+                    <div>
+                        <div class="mb-3 mr-4 inline-flex items-center sm:rounded-full">
+                            <i class="eva eva-clock-outline mr-1"></i>
+                            <span>
+                                <time
+                                    title="发布于：2022年04月09日 02:49:13"datetime="2022-04-09T02:49:13+02:00">2022年04月09日</time
+                                >
+                            </span>
+                        </div><span class="mb-3 mr-4 inline-flex items-center sm:rounded-full">
+                                    <i class="eva eva-edit-2-outline mr-1"></i>
+                                    <span>
+                                        <time
+                                            title="最后修改于：2022年05月29日 18:43:11"datetime="2022-05-29T18:43:11+08:00">2022年05月29日</time
+                                        >
+                                    </span>
+                                </span><div class="mb-3 mr-4 inline-flex items-center sm:rounded-full">
+                                <i class="eva eva-flag-outline mr-1"></i>
+                                <span>阅读约 1 分钟</span>
+                            </div><div class="mb-3 mr-4 inline-flex items-center sm:rounded-full">
+                                <i class="eva eva-bar-chart-outline mr-1"></i>
+                                <span>215 字</span>
+                            </div></div></div>
+
+
+                <section class="article-content typo flex-grow px-6 py-5 md:px-10 relative"><i title="更快的阅读" id="bionicReading" class="absolute right-0 top-0 p-3 cursor-pointer"><svg class="w-4 h-4 fill-current text-gray-400" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10811" width="200" height="200"><path d="M480 192c-19.2 0-32-12.8-32-32v-128c0-19.2 12.8-32 32-32s32 12.8 32 32v128c0 19.2-12.8 32-32 32zM160 1024c-6.4 0-19.2 0-25.6-6.4l-128-128c0-6.4-6.4-19.2-6.4-25.6s6.4-19.2 6.4-25.6l512-512c12.8-6.4 38.4-6.4 51.2 0l128 128c0 6.4 6.4 19.2 6.4 25.6s-6.4 19.2-6.4 25.6l-512 512c-6.4 6.4-19.2 6.4-25.6 6.4z m-83.2-160l83.2 83.2 467.2-467.2-83.2-83.2-467.2 467.2zM992 576h-128c-19.2 0-32-12.8-32-32s12.8-32 32-32h128c19.2 0 32 12.8 32 32s-12.8 32-32 32zM768 288c-6.4 0-19.2 0-25.6-6.4-12.8-12.8-12.8-32 0-44.8l96-96c12.8-12.8 32-12.8 44.8 0s12.8 32 0 44.8l-96 96c0 6.4-12.8 6.4-19.2 6.4zM256 288c-6.4 0-19.2 0-25.6-6.4L134.4 185.6c-6.4-12.8-6.4-38.4 0-51.2s32-12.8 44.8 0l96 96c12.8 12.8 12.8 32 0 44.8 0 12.8-12.8 12.8-19.2 12.8zM864 896c-6.4 0-19.2 0-25.6-6.4l-96-96c-12.8-12.8-12.8-32 0-44.8s32-12.8 44.8 0l96 96c12.8 12.8 12.8 32 0 44.8 0 6.4-12.8 6.4-19.2 6.4z" p-id="10812"></path><path d="M544 640c-6.4 0-19.2 0-25.6-6.4l-128-128c-6.4-12.8-6.4-38.4 0-51.2s32-12.8 44.8 0l128 128c12.8 12.8 12.8 38.4 6.4 51.2-6.4 6.4-19.2 6.4-25.6 6.4z" p-id="10813"></path></svg></i>
+
+<h2 class="group " id="加密文章测试"
+    >加密文章测试<a href="#%e5%8a%a0%e5%af%86%e6%96%87%e7%ab%a0%e6%b5%8b%e8%af%95"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<blockquote>
+<p>密码：<strong>2022</strong></p>
+</blockquote>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{% hugo-encrypt 2022 %}}
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">### 这里是加密内容
+</span></span></span><span style="display:flex;"><span><span style="font-weight:bold"></span>
+</span></span><span style="display:flex;"><span>test content
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>![<span style="color:#ff79c6">加密图片测试</span>](<span style="color:#50fa7b">https://unsplash.it/1920/1080/?random=1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">```js
+</span></span></span><span style="display:flex;"><span><span style="color:#f1fa8c"></span>console.log(<span style="color:#f1fa8c">&#39;加密代码块测试&#39;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#f1fa8c">```</span>
+</span></span><span style="display:flex;"><span>{{% /hugo-encrypt %}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hugo-encrypt id="rd354261d519434f7f5b6862e1098a544"><div class="hugo-encrypt-encryption-notice rounded-md border bg-gray-100 p-4 dark:border-darkBorder dark:bg-darkBg">
+        <div class="mb-2">此处包含密码保护内容</div>
+        <noscript><span>需要启用 Javascript 来解密内容</span></noscript>
+
+        <div class="hugo-encrypt-form inline-flex overflow-hidden rounded border border-gray-300 dark:border-darkBorder">
+            <input
+                class="hugo-encrypt-input border-r border-gray-300 bg-white py-1 px-3 dark:border-darkBorder dark:bg-darkFg"
+                placeholder="请输入密码"
+            />
+            <input
+                class="hugo-encrypt-button cursor-pointer bg-white py-1 px-3 dark:bg-darkFg"
+                type="button"
+                value="提交"
+                data-hugo-encrypt-id="d354261d519434f7f5b6862e1098a544"
+            />
+        </div>
+        <div class="hugo-encrypt-input-response mt-2 text-sm text-red-500"></div>
+    </div>
+    <cipher-text
+        data-cipher-id="d354261d519434f7f5b6862e1098a544"
+        data-password="2022"
+        data-content="Cgo8aDMgY2xhc3M9Imdyb3VwICIgaWQ9Iui/memHjOaYr&#43;WKoOWvhuWGheWuuSIKICAgID7ov5nph4zmmK/liqDlr4blhoXlrrk8YSBocmVmPSIjJWU4JWJmJTk5JWU5JTg3JThjJWU2JTk4JWFmJWU1JThhJWEwJWU1JWFmJTg2JWU1JTg2JTg1JWU1JWFlJWI5IgogICAgICAgID48aSBjbGFzcz0iZXZhIGV2YS1saW5rIG1sLTMgYWxpZ24tbWlkZGxlIHRleHQtdGhlbWUgb3BhY2l0eS0wIHRyYW5zaXRpb24gZWFzZS1pbi1vdXQgZ3JvdXAtaG92ZXI6b3BhY2l0eS0xMDAiPjwvaT48L2EKPjwvaDM&#43;Cgo8cD50ZXN0IGNvbnRlbnQ8L3A&#43;CjxwPjxmaWd1cmUgY2xhc3M9ImdhbGxlcnktaW1hZ2UiPgogICAgICAgIDxwaWN0dXJlPgogICAgICAgICAgICA8aW1nCiAgICAgICAgICAgICAgICBkYXRhLXNyYz0iaHR0cHM6Ly91bnNwbGFzaC5pdC8xOTIwLzEwODAvP3JhbmRvbT0xIgogICAgICAgICAgICAgICAgc3JjPSIvaW1hZ2VzL291dGxvYWQuc3ZnImFsdD0i5Yqg5a&#43;G5Zu&#43;54mH5rWL6K&#43;VImRhdGEtem9vbWFibGUKICAgICAgICAgICAgICAgIGRhdGEtbGF6eWxvYWQKICAgICAgICAgICAgLz4KICAgICAgICA8L3BpY3R1cmU&#43;PGZpZ2NhcHRpb24&#43;5Yqg5a&#43;G5Zu&#43;54mH5rWL6K&#43;VPC9maWdjYXB0aW9uPjwvZmlndXJlPgogICAgPG5vc2NyaXB0IGRhdGEtbGF6eWxvYWQtbm9zY3JpcHQ&#43;CiAgICAgICAgPGltZwogICAgICAgICAgICBzcmM9Imh0dHBzOi8vdW5zcGxhc2guaXQvMTkyMC8xMDgwLz9yYW5kb209MSJhbHQ9IuWKoOWvhuWbvueJh&#43;a1i&#43;ivlSIvPgogICAgPC9ub3NjcmlwdD48L3A&#43;CjxkaXYgY2xhc3M9ImhpZ2hsaWdodCI&#43;PGRpdiBzdHlsZT0iY29sb3I6I2Y4ZjhmMjtiYWNrZ3JvdW5kLWNvbG9yOiMyODJhMzY7LW1vei10YWItc2l6ZTo0Oy1vLXRhYi1zaXplOjQ7dGFiLXNpemU6NDsiPgo8dGFibGUgc3R5bGU9ImJvcmRlci1zcGFjaW5nOjA7cGFkZGluZzowO21hcmdpbjowO2JvcmRlcjowOyI&#43;PHRyPjx0ZCBzdHlsZT0idmVydGljYWwtYWxpZ246dG9wO3BhZGRpbmc6MDttYXJnaW46MDtib3JkZXI6MDsiPgo8cHJlIHRhYmluZGV4PSIwIiBzdHlsZT0iY29sb3I6I2Y4ZjhmMjtiYWNrZ3JvdW5kLWNvbG9yOiMyODJhMzY7LW1vei10YWItc2l6ZTo0Oy1vLXRhYi1zaXplOjQ7dGFiLXNpemU6NDsiPjxjb2RlPjxzcGFuIHN0eWxlPSJ3aGl0ZS1zcGFjZTpwcmU7dXNlci1zZWxlY3Q6bm9uZTttYXJnaW4tcmlnaHQ6MC40ZW07cGFkZGluZzowIDAuNGVtIDAgMC40ZW07Y29sb3I6IzdmN2Y3ZiI&#43;MQo8L3NwYW4&#43;PC9jb2RlPjwvcHJlPjwvdGQ&#43;Cjx0ZCBzdHlsZT0idmVydGljYWwtYWxpZ246dG9wO3BhZGRpbmc6MDttYXJnaW46MDtib3JkZXI6MDs7d2lkdGg6MTAwJSI&#43;CjxwcmUgdGFiaW5kZXg9IjAiIHN0eWxlPSJjb2xvcjojZjhmOGYyO2JhY2tncm91bmQtY29sb3I6IzI4MmEzNjstbW96LXRhYi1zaXplOjQ7LW8tdGFiLXNpemU6NDt0YWItc2l6ZTo0OyI&#43;PGNvZGUgY2xhc3M9Imxhbmd1YWdlLWpzIiBkYXRhLWxhbmc9ImpzIj48c3BhbiBzdHlsZT0iZGlzcGxheTpmbGV4OyI&#43;PHNwYW4&#43;Y29uc29sZS5sb2coPHNwYW4gc3R5bGU9ImNvbG9yOiNmMWZhOGMiPiYjMzk75Yqg5a&#43;G5Luj56CB5Z2X5rWL6K&#43;VJiMzOTs8L3NwYW4&#43;KTsKPC9zcGFuPjwvc3Bhbj48L2NvZGU&#43;PC9wcmU&#43;PC90ZD48L3RyPjwvdGFibGU&#43;CjwvZGl2Pgo8L2Rpdj4="
+        style="display:none;"
+    ></cipher-text>
+</hugo-encrypt>
+
+<hr>
+
+
+<h2 class="group " id="多块测试"
+    >多块测试<a href="#%e5%a4%9a%e5%9d%97%e6%b5%8b%e8%af%95"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<blockquote>
+<p>默认密码：<strong>123456</strong></p>
+</blockquote>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{%hugo-encrypt %}}`这里是第二段密文`{{%/hugo-encrypt %}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hugo-encrypt id="r8d461495e567f438201f3d91ab456254"><div class="hugo-encrypt-encryption-notice rounded-md border bg-gray-100 p-4 dark:border-darkBorder dark:bg-darkBg">
+        <div class="mb-2">此处包含密码保护内容</div>
+        <noscript><span>需要启用 Javascript 来解密内容</span></noscript>
+
+        <div class="hugo-encrypt-form inline-flex overflow-hidden rounded border border-gray-300 dark:border-darkBorder">
+            <input
+                class="hugo-encrypt-input border-r border-gray-300 bg-white py-1 px-3 dark:border-darkBorder dark:bg-darkFg"
+                placeholder="请输入密码"
+            />
+            <input
+                class="hugo-encrypt-button cursor-pointer bg-white py-1 px-3 dark:bg-darkFg"
+                type="button"
+                value="提交"
+                data-hugo-encrypt-id="8d461495e567f438201f3d91ab456254"
+            />
+        </div>
+        <div class="hugo-encrypt-input-response mt-2 text-sm text-red-500"></div>
+    </div>
+    <cipher-text
+        data-cipher-id="8d461495e567f438201f3d91ab456254"
+        data-password="123456"
+        data-content="PGNvZGU&#43;6L&#43;Z6YeM5piv56ys5LqM5q615a&#43;G5paHPC9jb2RlPg=="
+        style="display:none;"
+    ></cipher-text>
+</hugo-encrypt>
+
+<p>小尾巴~</p>
+</section><div class="px-6 pb-5 pt-4 text-center text-xl text-gray-500 md:px-10 md:pb-10 md:pt-14"><a
+                class="mr-4 inline-flex h-5 w-5 items-center"
+                title="分享到 Twitter"
+                href="https://twitter.com/share?&text=Hugo%20%e6%96%87%e7%ab%a0%e5%8a%a0%e5%af%86%e6%b5%8b%e8%af%95&url=https://hugo-theme-luna.imiku.me/2022/04/09/hugo-encrypt.html/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="eva eva-twitter hover:text-theme"></i
+            ></a><a
+                class="mr-4 inline-flex h-5 w-5 items-center"
+                title="分享到 Facebook"
+                href="https://www.facebook.com/sharer.php?u=https://hugo-theme-luna.imiku.me/2022/04/09/hugo-encrypt.html/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="eva eva-facebook hover:text-theme"></i
+            ></a><a
+                class="mr-4 inline-flex h-5 w-5 items-center"
+                title="分享到 微博"
+                href="https://service.weibo.com/share/share.php?url=https://hugo-theme-luna.imiku.me/2022/04/09/hugo-encrypt.html/&title=%e5%8a%a0%e5%af%86%e6%96%87%e7%ab%a0%e6%b5%8b%e8%af%95&sudaref=hugo-theme-luna.imiku.me"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <svg
+                    class="inline-block h-5 w-5 fill-current hover:text-theme"
+                    viewBox="0 0 1193 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="2681"
+                    width="200"
+                    height="200"
+                >
+                    <path
+                        d="M456.991736 557.336482c-107.598583 0-194.644628 74.956316-194.644629 166.838252s87.046045 166.838253 194.644629 166.838253c107.598583 0 194.644628-74.956316 194.644628-166.838253s-87.046045-166.838253-194.644628-166.838252zM391.707202 822.101535c-36.269185 0-66.493506-27.806375-66.493507-62.866588s29.015348-62.866588 66.493507-62.866588c36.269185 0 66.493506 27.806375 66.493506 62.866588S427.976387 822.101535 391.707202 822.101535z m93.090909-91.881936c-14.507674 0-26.597403-12.089728-26.597403-26.597403s12.089728-26.597403 26.597403-26.597403 26.597403 12.089728 26.597403 26.597403-12.089728 26.597403-26.597403 26.597403zM239.376623 281.690673C97.9268 394.125148-18.134593 600.859504 30.224321 661.308146c32.642267 41.105077 59.239669-19.343566 124.524203-89.46399 30.224321-32.642267 77.374262-54.403778 122.106258-90.672964 20.552538-16.92562 197.062574-35.060213 230.913813-35.060212 97.9268-99.135773 114.85242-207.943329 74.956316-258.720189-48.358914-59.239669-201.898465-16.92562-343.348288 94.299882z"
+                        p-id="2682"
+                    ></path>
+                    <path
+                        d="M808.802834 560.9634C906.729634 461.827627 911.565525 377.199528 870.460449 326.422668c-47.149941-60.448642-211.570248-32.642267-351.811098 78.583235"
+                        p-id="2683"
+                    ></path>
+                    <path
+                        d="M605.695396 353.020071c-14.507674 8.46281-25.38843 12.089728-29.015349 7.253837-1.208973-2.417946-1.208973-6.044864 1.208973-9.671783-16.92562-1.208973-33.85124-1.208973-50.776859-1.208973C235.749705 349.393152 0 500.514758 0 686.696576s235.749705 337.303424 527.112161 337.303424 527.112161-151.121606 527.11216-337.303424c0-170.465171-194.644628-309.497048-448.528925-333.676505zM481.171192 959.924439C275.645809 959.924439 108.807556 847.489965 108.807556 708.458087s166.838253-251.466352 372.363636-251.466351 372.363636 112.434475 372.363637 251.466351-166.838253 251.466352-372.363637 251.466352z"
+                        p-id="2684"
+                    ></path>
+                    <path
+                        d="M1021.582054 423.140496c-3.626919 0-6.044864 0-9.671782-1.208973-18.134593-4.835891-29.015348-24.179457-22.970485-42.31405 2.417946-7.253837 3.626919-16.92562 3.626919-29.015348 0-65.284534-53.194805-119.688312-119.688312-119.688312-19.343566 0-33.85124-15.716647-33.851239-33.851239s15.716647-33.85124 33.851239-33.85124c103.971665 0 187.390791 84.628099 187.390791 187.390791 0 18.134593-2.417946 33.85124-6.044864 48.358914-4.835891 14.507674-18.134593 24.179457-32.642267 24.179457z"
+                        p-id="2685"
+                    ></path>
+                    <path
+                        d="M1146.106257 473.917355c-2.417946 0-6.044864 0-8.46281-1.208972-20.552538-4.835891-32.642267-25.38843-27.806375-45.940969 6.044864-24.179457 8.46281-47.149941 8.46281-71.329397C1118.299882 201.898465 991.357733 74.956316 836.609209 74.956316c-20.552538 0-37.478158-16.92562-37.478158-37.478158S816.056671 0 836.609209 0c197.062574 0 356.646989 159.584416 356.646989 356.646989 0 29.015348-3.626919 59.239669-10.880755 88.255018-3.626919 18.134593-19.343566 29.015348-36.269186 29.015348z"
+                        p-id="2686"
+                    ></path>
+                </svg>
+            </a><i class="eva eva-copy mr-4 cursor-pointer hover:text-theme" title="复制链接" data-clipboard-text="https://hugo-theme-luna.imiku.me/2022/04/09/hugo-encrypt.html/"></i><div class="group relative hidden cursor-pointer sm:inline-block">
+                <i title="二维码" class="eva show-qrcode eva-smartphone hover:text-theme"></i>
+                <div
+                    class="qrcode-wrapper pointer-events-none absolute left-2/4 bottom-10 h-32 w-32 -translate-x-1/2 overflow-hidden rounded border border-gray-300 bg-white opacity-0 transition duration-300 ease-[ease] group-hover:opacity-100"
+                >
+                    <img class="h-full w-full" src="https://www.lofter.com/genBitmaxImage?url=https://hugo-theme-luna.imiku.me/2022/04/09/hugo-encrypt.html/" alt="二维码" />
+                </div>
+            </div></div>
+<div class="border-b dark:border-darkBorder"></div><div class="flex justify-between p-4 text-xl md:text-2xl">
+    <div>
+        <a
+            href="/2019/02/16/luna-released.html/"
+            title=""
+            class="invisible flex cursor-pointer items-center text-gray-500 transition duration-300 ease-[ease] hover:text-theme dark:text-darkTextPlaceholder dark:hover:text-darkText"style="visibility: visible;">
+            <span class="flex items-center text-5xl opacity-70 dark:bg-opacity-100">
+                <i class="eva eva-chevron-left-outline"></i>
+            </span>
+            <span>上一篇</span>
+        </a>
+    </div><a
+        href="/2022/04/15/typography.html/"
+        title="中文排版测试"
+        class="invisible flex cursor-pointer items-center text-gray-500 transition duration-300 ease-[ease] hover:text-theme dark:text-darkTextPlaceholder dark:hover:text-darkText"style="visibility: visible;">
+        <span>下一篇</span>
+        <span class="flex items-center text-5xl opacity-70 dark:bg-opacity-100">
+            <i class="eva eva-chevron-right-outline"></i>
+        </span>
+    </a>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+                </main><footer>
+    <div
+        class="com-footer flex flex-col items-center border-t py-4 px-6 text-sm leading-none text-gray-600 dark:border-darkBorder dark:text-darkTextPlaceholder md:flex-row md:justify-between"
+    >
+        <div class="mb-2 flex items-center justify-between text-center md:mb-0">
+            <span class="">© 2022 - 2022</span>
+            <span class="mx-2 opacity-50"> | </span>由 <a data-no-swup class="mx-1 font-bold hover:text-theme" href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> <span class="text-xs opacity-70">❤</span> <a data-no-swup class="mx-1 font-bold hover:text-theme" href="https://github.com/Ice-Hazymoon/hugo-theme-luna" target="_blank" rel="noopener noreferrer">Luna</a> 驱动</div>
+
+        <div class="flex items-center"><span class="mx-2 hidden opacity-50 md:block"> | </span><a data-no-swup href="https://hugo-theme-luna.imiku.me/index.xml" target="_blank" class="mr-2 hover:text-theme"><svg t="1650887361919" class="mr-0.5 w-96 w-3 fill-current text-inherit inline-block align-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3091"><path d="M320.16155 831.918c0 70.738-57.344 128.082-128.082 128.082S63.99955 902.656 63.99955 831.918s57.344-128.082 128.082-128.082 128.08 57.346 128.08 128.082z m351.32 94.5c-16.708-309.2-264.37-557.174-573.9-573.9C79.31155 351.53 63.99955 366.21 63.99955 384.506v96.138c0 16.83 12.98 30.944 29.774 32.036 223.664 14.568 402.946 193.404 417.544 417.544 1.094 16.794 15.208 29.774 32.036 29.774h96.138c18.298 0.002 32.978-15.31 31.99-33.58z m288.498 0.576C943.19155 459.354 566.92955 80.89 97.00555 64.02 78.94555 63.372 63.99955 77.962 63.99955 96.032v96.136c0 17.25 13.67 31.29 30.906 31.998 382.358 15.678 689.254 322.632 704.93 704.93 0.706 17.236 14.746 30.906 31.998 30.906h96.136c18.068-0.002 32.658-14.948 32.01-33.008z" p-id="3092"></path></svg><span>RSS</span>
+                </a><a data-no-swup href="https://hugo-theme-luna.imiku.me/sitemap.xml" target="_blank" class="mr-2 hover:text-theme"><svg t="1650887940556" class="mr-0.5 w-3 fill-current text-inherit inline-block align-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6291"><path d="M950.044 625.778h-68.266v-56.89c0-45.51-39.822-85.332-85.334-85.332h-256v-85.334h68.267c39.822 0 73.956-34.133 73.956-73.955V130.844c0-39.822-34.134-73.955-73.956-73.955H415.29c-39.822 0-73.956 34.133-73.956 73.955v193.423c0 39.822 34.134 73.955 73.956 73.955h68.267v85.334h-256c-45.512 0-85.334 39.822-85.334 85.333v56.889H73.956C34.133 625.778 0 659.91 0 699.733v193.423c0 39.822 34.133 73.955 73.956 73.955h193.422c39.822 0 73.955-34.133 73.955-73.955V699.733c0-39.822-34.133-73.955-73.955-73.955H199.11v-56.89c0-17.066 11.378-28.444 28.445-28.444h568.888c17.067 0 28.445 11.378 28.445 28.445v56.889h-68.267c-39.822 0-73.955 34.133-73.955 73.955v193.423c0 39.822 34.133 73.955 73.955 73.955h193.422c39.823 0 73.956-34.133 73.956-73.955V699.733c0-39.822-34.133-73.955-73.956-73.955z" p-id="6292"></path></svg><span>Sitemap</span>
+                </a><div id="google_translate_element" class="overflow-hidden rounded border dark:border-darkBorder"></div></div><div id="run-time" class="mt-2 flex-grow text-right md:mt-0">
+    <span>运行时间： </span><b id="run-time-d">0</b>
+    <span class="text-xs"> 天 </span>
+    <b id="run-time-h">0</b>
+    <span class="text-xs"> 小时 </span>
+    <b id="run-time-m">0</b>
+    <span class="text-xs"> 分钟 </span>
+    <b id="run-time-s">0</b>
+    <span class="text-xs"> 秒</span>
+</div>
+</div>
+    <script type="text/javascript">
+window.__theme = {
+    cdn: '',
+    pjax: true ,
+    isServer: false ,
+    $version:"",
+    lang: 'zh-cn',
+    imageZoom: true ,
+    lazyload: true ,
+    bionicReading: true ,
+    backtop: true ,
+    pangu: true ,
+    autoDarkMode: false ,
+    googleAnalytics:false,
+    hugoEncrypt: {
+        wrongPasswordText: '密码错误',
+        userStorage:window['sessionStorage'],
+    },
+    assets: {
+        error_svg: "\/images\/error.svg",
+        search_svg: "\/images\/search.svg",
+    },
+    i18n: {
+        untitled: "无标题",
+        copySuccess: "复制成功",
+        copyFailed: "复制失败，请手动复制",
+        copyCode: "复制代码",
+        searchLoadFailure: "初始化搜索引擎失败",
+        searchInput: "请输入内容",
+        searchResults: (results, keyword) =>`关键字 <span class="text-theme">${keyword}</span> 中共找到 <span class="text-theme">${results}</span> 条结果`,
+    },creatTime: "2022\/05\/29"}
+</script>
+<script type="text/javascript" src="/ts/main.de5f1984bc2a6d6adee3c6be8fe1fcc8cdb58d3ef3f40cb1c4517df0401c1b06.js" defer integrity="sha256-3l8ZhLwqbWre48a&#43;j&#43;H8yM21jT7z9AyxxFF98EAcGwY="></script><script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('\/sw.js');
+        });
+    }
+</script>
+<script type="text/javascript" src="/translate-google.3d30b8b1f31d88c727eb9f914db18c2c324e882148d41dea4ac3703767b3cc5c.js" defer integrity="sha256-PTC4sfMdiMcn65&#43;RTbGMLDJOiCFI1B3qSsNwN2ezzFw="></script><script type="text/javascript">
+    window.translateelement_styles = "\/sass\/translateelement.min.c65796c6c3e4d48c75f72776948be83c5c448d1c5cc466b996b00657c558d28a.css";
+    function googleTranslateElementInit(){
+        new google.translate.TranslateElement({
+            pageLanguage: 'zh-cn',
+            includedLanguages: 'af,ga,sq,it,ar,ja,az,kn,eu,ko,bn,la,be,lv,bg,lt,ca,mk,zh-CN,ms,zh-TW,mt,hr,no,cs,fa,da,pl,nl,pt,en,ro,eo,ru,et,sr,tl,sk,fi,sl,fr,es,gl,sw,ka,sv,de,ta,el,te,gu,th,ht,tr,iw,uk,hi,ur,hu,vi,is,cy,id,yi',
+            autoDisplay:false
+        },'google_translate_element');
+    }
+</script>
+
+
+
+
+
+<script>
+    
+    
+</script>
+
+<script data-swup-reload-script>
+    
+    
+</script>
+</footer>
+</div>
+        </div><a
+        href="#nav"
+        title="返回顶部"
+        id="back-top"
+        class="fixed right-6 bottom-9 z-10 translate-y-3 scale-90 cursor-pointer rounded-full bg-white opacity-0 transition duration-300 ease-[ease] dark:bg-darkBgAccent sm:scale-100"
+    >
+        <div class="relative">
+            <div class="absolute left-0 top-0 flex h-full w-full items-center justify-center text-xl">
+                <i class="eva eva-arrow-upward-outline"></i>
+            </div>
+            <svg id="svg" width="54" height="54" viewBox="0 0 54 54" preserveAspectRatio="xMinYMin meet">
+                <circle
+                    transform="rotate(-90, 27 , 27)"
+                    style="stroke-dasharray: 157, 157; stroke-dashoffset: 157;"
+                    cx="27"
+                    cy="27"
+                    r="25"
+                    fill="none"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke="var(--theme)"
+                />
+            </svg>
+        </div>
+    </a><div id="i18nlist"><div
+                style="font-size: 0;"
+                class="absolute left-0 top-0 z-50 rounded rounded-tl-none rounded-bl-none bg-white p-1.5 shadow-custom dark:bg-darkBgAccent"
+            >
+                <input type="checkbox" name="i18nlist-input" id="i18nlist-checkbox" />
+                <label for="i18nlist-checkbox">
+                    <i class="eva eva-globe-outline cursor-pointer text-xl leading-none group-hover:hidden"></i>
+                </label>
+                <ul class="hidden border border-transparent pb-0 group-hover:block"><li class="mb-1.5 cursor-pointer last:mb-0">
+                            <a data-no-swup href="https://hugo-theme-luna.imiku.me/en-us/2022/04/09/hugo-encrypt.html/" title="切换语言到 English"><img class="w-6 cursor-pointer rounded-sm" src="/images/i18n/en-us.svg" alt="en-us" />
+                            </a>
+                        </li></ul>
+            </div></div><noscript>
+    <style>
+        .gallery-image,
+        .dark-mode-switch,
+        #run-time,
+        [data-clipboard-text],
+        [data-lazyload] {
+            display: none;
+        }
+        #back-top {
+            opacity: 1;
+        }
+    </style>
+</noscript>
+</body>
+</html>

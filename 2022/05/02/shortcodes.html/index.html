@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="lang-zh-cn"><head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Shortcodes,Hugo,Luna,Hugo Theme," />
+    <meta name="description" content="一些短代码示例" />
+    <meta itemprop="description" content="一些短代码示例" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta itemprop="name" content="长街短梦" />
+    <link href="https://hugo-theme-luna.imiku.me/index.xml" title="长街短梦" type="application/rss+xml" rel="alternate" />
+    <title>长街短梦</title><link rel="stylesheet" href="/main.8203a6c942fdd82a43ce5398736460463856111cbd1d2b1c9f143acb2a8a0005.css" integrity="sha256-ggOmyUL92CpDzlOYc2RgRjhWERy9HSscnxQ6yyqKAAU=" /><meta property="og:site_name" content="长街短梦" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="短代码（Shortcodes）" />
+    <meta property="og:description" content="一些短代码示例" />
+    <meta property="og:url" content="https://hugo-theme-luna.imiku.me/2022/05/02/shortcodes.html/" />
+    <meta property="og:image" content="https://i.pinimg.com/736x/13/2b/cb/132bcb6a64927659c6866758885fd57d.jpg" />
+    <meta property="article:publisher" content="https://hugo-theme-luna.imiku.me/2022/05/02/shortcodes.html/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="长街短梦" />
+    <meta name="twitter:description" content="一些短代码示例" />
+    <meta name="twitter:url" content="https://hugo-theme-luna.imiku.me/2022/05/02/shortcodes.html/" />
+    <meta name="twitter:image" content="https://i.pinimg.com/736x/13/2b/cb/132bcb6a64927659c6866758885fd57d.jpg" />
+    <meta name="twitter:site" content="@王云子" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1280" />
+    <meta name="theme-color" content="#B0E0E6" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="长街短梦">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white"><meta property="article:published_time" content="2022-05-02T13:12:47&#43;02:00" /><meta property="article:modified_time" content="2022-05-29T18:43:11&#43;08:00" /><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /><link rel="manifest" href="/manifest.json" /><link href="/icon.png" rel="shortcut icon" />
+    <link href="/icon.png" rel="Bookmark" />
+    <link rel="apple-touch-icon" href="/icon.png" /><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "短代码（Shortcodes）",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https:\/\/hugo-theme-luna.imiku.me\/2022\/05\/02\/shortcodes.html\/"
+  },"image": {
+    "@type": "ImageObject",
+    "url": "https:\/\/hugo-theme-luna.imiku.me\/cover.png",
+    "width": 1000 ,
+    "height": 519 },"genre": "posts","keywords": "Shortcodes, Hugo","wordcount": 2884 ,
+  "url": "https:\/\/hugo-theme-luna.imiku.me\/2022\/05\/02\/shortcodes.html\/","datePublished": "2022-05-02T13:12:47\u002b02:00","dateModified": "2022-05-29T18:43:11\u002b08:00","author": {
+    "@type": "Person",
+    "name": "王云子"
+  },"description": ""
+}
+</script>
+
+</head>
+<body class="dark:bg-darkBg dark:text-darkText"><div class="relative mx-auto shadow-lg md:max-w-4xl xl:max-w-4xl 2xl:max-w-4xl">
+            <div class="main flex flex-col justify-between bg-white dark:bg-darkFg"><header class="relative">
+    <nav id="nav" class="navbar top-0 z-10 flex items-center border-b px-5 py-6 dark:border-darkBorder md:px-10">
+        <div class="route-items flex w-full items-center justify-around"><a
+                    title="首页"
+                    data-active-link="/"
+                    href="/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-home flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">首页</span>
+                </a><a
+                    title="关于我"
+                    data-active-link="/about/"
+                    href="/about/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-heart flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">关于我</span>
+                </a><a
+                    title="朋友们"
+                    data-active-link="/links/"
+                    href="/links/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-people flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">朋友们</span>
+                </a><a
+                    title="归档"
+                    data-active-link="/archives/"
+                    href="/archives/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-bar-chart flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">归档</span>
+                </a><a
+                    title="推特"
+                    data-active-link="/twitter/"
+                    href="/twitter/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-twitter flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">推特</span>
+                </a><a
+                    title="GitHub"
+                    data-active-link="/github/"
+                    href="/github/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-github flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">GitHub</span>
+                </a><a
+                    title=""
+                    data-active-link="https://yunzi.vercel.app/"
+                    href="https://yunzi.vercel.app/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-navigation-2-outline flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden"></span>
+                </a><a
+                    title="搜索"
+                    data-active-link="/search/"
+                    href="/search/"
+                    class=" relative flex cursor-pointer flex-col items-center text-gray-700 transition duration-300 ease-[ease]"
+                >
+                    <i
+                        class="eva eva-search flex h-8 w-8 items-center justify-center text-3xl leading-none text-gray-500 transition duration-300 ease-[ease] dark:text-darkTextPlaceholder"
+                    ></i>
+                    <span class="mt-1 block text-xs text-gray-400 dark:text-darkText sm:text-sm md:hidden">搜索</span>
+                </a>
+        </div>
+    </nav>
+</header>
+<div class="dark-mode-switch absolute right-0 top-0 z-10 cursor-pointer pr-2 pt-2 text-xl leading-none">
+    <i class="eva eva-moon opacity-20 dark:opacity-70"></i>
+</div>
+<main class="relative flex flex-grow" id="swup">
+                    <div class="w-full type-posts layout-"><div class="relative h-full">
+        <div class="relative h-full">
+            <div class="page-view-article flex h-full flex-col bg-white dark:bg-darkFg">
+                <div class="relative"><div>
+                            <div class="-mb-2 w-full p-6 pb-0 text-3xl">
+                                短代码（Shortcodes）
+                            </div>
+                        </div></div>
+                <div class="article-info border-b p-6 pb-3 text-sm dark:border-darkBorder">
+                    <div>
+                        <div class="mb-3 mr-4 inline-flex items-center sm:rounded-full">
+                            <i class="eva eva-clock-outline mr-1"></i>
+                            <span>
+                                <time
+                                    title="发布于：2022年05月02日 13:12:47"datetime="2022-05-02T13:12:47+02:00">2022年05月02日</time
+                                >
+                            </span>
+                        </div><span class="mb-3 mr-4 inline-flex items-center sm:rounded-full">
+                                    <i class="eva eva-edit-2-outline mr-1"></i>
+                                    <span>
+                                        <time
+                                            title="最后修改于：2022年05月29日 18:43:11"datetime="2022-05-29T18:43:11+08:00">2022年05月29日</time
+                                        >
+                                    </span>
+                                </span><div class="mb-3 mr-4 inline-flex items-center sm:rounded-full">
+                                <i class="eva eva-flag-outline mr-1"></i>
+                                <span>阅读约 6 分钟</span>
+                            </div><div class="mb-3 mr-4 inline-flex items-center sm:rounded-full">
+                                <i class="eva eva-bar-chart-outline mr-1"></i>
+                                <span>2884 字</span>
+                            </div></div><div class="mb-3 flex items-center">
+                            <i class="eva eva-pricetags-outline mr-1"></i>
+                            <span class="mr-3">标签</span><a href="/tags/shortcodes" title="Shortcodes" class="group mr-2 flex items-center text-sm">
+                                    <i class="mr-1 text-gray-400 group-hover:text-theme">#</i>
+                                    <span class="text-gray-400 group-hover:text-theme">Shortcodes</span>
+                                </a><a href="/tags/hugo" title="Hugo" class="group mr-2 flex items-center text-sm">
+                                    <i class="mr-1 text-gray-400 group-hover:text-theme">#</i>
+                                    <span class="text-gray-400 group-hover:text-theme">Hugo</span>
+                                </a></div><div class="mb-3 flex items-center">
+                            <i class="eva eva-folder-outline mr-1"></i>
+                            <span class="mr-3">分类</span><a href="/categories/luna" title="Luna" class="group flex items-center text-sm">
+                                    <span class="text-gray-400 group-hover:text-theme">Luna</span>
+                                    <span class="mx-0.5 group-last:hidden">,</span>
+                                </a></div></div>
+
+
+                <section class="article-content typo flex-grow px-6 py-5 md:px-10 relative"><i title="更快的阅读" id="bionicReading" class="absolute right-0 top-0 p-3 cursor-pointer"><svg class="w-4 h-4 fill-current text-gray-400" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10811" width="200" height="200"><path d="M480 192c-19.2 0-32-12.8-32-32v-128c0-19.2 12.8-32 32-32s32 12.8 32 32v128c0 19.2-12.8 32-32 32zM160 1024c-6.4 0-19.2 0-25.6-6.4l-128-128c0-6.4-6.4-19.2-6.4-25.6s6.4-19.2 6.4-25.6l512-512c12.8-6.4 38.4-6.4 51.2 0l128 128c0 6.4 6.4 19.2 6.4 25.6s-6.4 19.2-6.4 25.6l-512 512c-6.4 6.4-19.2 6.4-25.6 6.4z m-83.2-160l83.2 83.2 467.2-467.2-83.2-83.2-467.2 467.2zM992 576h-128c-19.2 0-32-12.8-32-32s12.8-32 32-32h128c19.2 0 32 12.8 32 32s-12.8 32-32 32zM768 288c-6.4 0-19.2 0-25.6-6.4-12.8-12.8-12.8-32 0-44.8l96-96c12.8-12.8 32-12.8 44.8 0s12.8 32 0 44.8l-96 96c0 6.4-12.8 6.4-19.2 6.4zM256 288c-6.4 0-19.2 0-25.6-6.4L134.4 185.6c-6.4-12.8-6.4-38.4 0-51.2s32-12.8 44.8 0l96 96c12.8 12.8 12.8 32 0 44.8 0 12.8-12.8 12.8-19.2 12.8zM864 896c-6.4 0-19.2 0-25.6-6.4l-96-96c-12.8-12.8-12.8-32 0-44.8s32-12.8 44.8 0l96 96c12.8 12.8 12.8 32 0 44.8 0 6.4-12.8 6.4-19.2 6.4z" p-id="10812"></path><path d="M544 640c-6.4 0-19.2 0-25.6-6.4l-128-128c-6.4-12.8-6.4-38.4 0-51.2s32-12.8 44.8 0l128 128c12.8 12.8 12.8 38.4 6.4 51.2-6.4 6.4-19.2 6.4-25.6 6.4z" p-id="10813"></path></svg></i>
+
+<h2 class="group " id="abbr"
+    >Abbr<a href="#abbr"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">abbr</span> &#34;<span style="color:#50fa7b">AWSL</span>&#34; &#34;<span style="color:#50fa7b">啊我死了</span>&#34; &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><abbr title="啊我死了">AWSL</abbr>
+
+
+
+<h2 class="group " id="文字排版"
+    >文字排版<a href="#%e6%96%87%e5%ad%97%e6%8e%92%e7%89%88"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">align</span> <span style="color:#50fa7b">left</span> &#34;<span style="color:#50fa7b">文字居左</span>&#34; &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">align</span> <span style="color:#50fa7b">center</span> &#34;<span style="color:#50fa7b">文字居中</span>&#34; &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">align</span> <span style="color:#50fa7b">right</span> &#34;<span style="color:#50fa7b">文字居右</span>&#34; &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p style="text-align:left">文字居左</p>
+
+<p style="text-align:center">文字居中</p>
+
+<p style="text-align:right">文字居右</p>
+
+
+
+<h2 class="group " id="github"
+    >GitHub<a href="#github"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">github</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;tailwindlabs/tailwindcss&#34;</span> <span style="color:#50fa7b">link</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://github.com/tailwindlabs/tailwindcss&#34;</span> <span style="color:#50fa7b">description</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;A utility-first CSS framework for rapid UI development.&#34;</span> <span style="color:#50fa7b">color</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;#f1e05a&#34;</span> <span style="color:#50fa7b">language</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;JavaScript&#34;</span> &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="github my-4 rounded border p-4 dark:border-darkBorder">
+    <div class="flex items-center text-xl">
+        <i class="eva eva-github mr-2"></i>
+        <a class="before:hidden" href="https://github.com/tailwindlabs/tailwindcss" target="_blank">tailwindlabs/tailwindcss</a>
+    </div>
+    <div class="my-2 leading-6">A utility-first CSS framework for rapid UI development.</div>
+    <div class="flex items-center">
+        <span class="mr-1 inline-block h-3 w-3 rounded-full" style="background-color:#f1e05a"></span>
+        <span>JavaScript</span>
+    </div>
+</div>
+
+
+
+<h2 class="group " id="github-自动获取"
+    >GitHub 自动获取<a href="#github-%e8%87%aa%e5%8a%a8%e8%8e%b7%e5%8f%96"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">github-auto</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Ice-Hazymoon/hugo-theme-luna&#34;</span> &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="github my-4 rounded border p-4 dark:border-darkBorder">
+        <div class="flex items-center text-xl">
+            <i class="eva eva-github mr-2"></i>
+            <a class="before:hidden" href="https://github.com/Ice-Hazymoon/hugo-theme-luna" target="_blank">Ice-Hazymoon/hugo-theme-luna</a>
+        </div>
+        <div class="my-2 leading-6">A simple, performance-first, SEO-friendly Hugo theme / 一个轻量，快速，SEO 友好的 Hugo 主题</div>
+        <div class="flex items-center">
+            <div class="mr-4 inline-flex items-center">
+                <span class="mr-1 inline-block h-3 w-3 rounded-full" style="background-color:#f1e05a"></span>
+                <span>JavaScript</span>
+            </div>
+            <div class="mr-4 inline-flex items-center">
+                <i class="eva eva-star mr-1 text-amber-400"></i>
+                <span>80</span>
+            </div>
+            <div class="inline-flex items-center">
+                <i class="eva eva-shuffle-2 mr-1 text-blue-500"></i>
+                <span>6</span>
+            </div>
+        </div>
+    </div>
+
+
+<h2 class="group " id="notice"
+    >Notice<a href="#notice"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">notice</span> <span style="color:#50fa7b">warn</span> &gt;}}
+</span></span><span style="display:flex;"><span>十里青山远，潮平路带沙。数声啼鸟怨年华。又是凄凉时候，在天涯。白露收残月，清风散晓霞。绿杨堤畔问荷花。记得年时沽酒，那人家。
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#ff79c6">notice</span> &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">notice</span> <span style="color:#50fa7b">error</span> &gt;}}
+</span></span><span style="display:flex;"><span>十里青山远，潮平路带沙。数声啼鸟怨年华。又是凄凉时候，在天涯。白露收残月，清风散晓霞。绿杨堤畔问荷花。记得年时沽酒，那人家。
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#ff79c6">notice</span> &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">notice</span> <span style="color:#50fa7b">info</span> &gt;}}
+</span></span><span style="display:flex;"><span>十里青山远，潮平路带沙。数声啼鸟怨年华。又是凄凉时候，在天涯。白露收残月，清风散晓霞。绿杨堤畔问荷花。记得年时沽酒，那人家。
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#ff79c6">notice</span> &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">notice</span> <span style="color:#50fa7b">success</span> &gt;}}
+</span></span><span style="display:flex;"><span>十里青山远，潮平路带沙。数声啼鸟怨年华。又是凄凉时候，在天涯。白露收残月，清风散晓霞。绿杨堤畔问荷花。记得年时沽酒，那人家。
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#ff79c6">notice</span> &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="border-yellow-400 border-green-400 border-red-400 border-blue-400"></div>
+<div class="bg-yellow-400 bg-green-400 bg-red-400 bg-blue-400"></div>
+<div class="text-yellow-400 text-green-400 text-red-400 text-blue-400"></div>
+
+<div
+    class="border-yellow-400 bg-yellow-400 my-4 ml-0 flex items-start rounded border-l-4 bg-opacity-10 p-5 dark:bg-darkBgAccent"
+    
+>
+    <div class="mr-2">
+        <i class="eva text-yellow-400 eva-alert-circle-outline text-2xl"></i>
+    </div><p style="margin: 0;">十里青山远，潮平路带沙。数声啼鸟怨年华。又是凄凉时候，在天涯。白露收残月，清风散晓霞。绿杨堤畔问荷花。记得年时沽酒，那人家。</p></div>
+
+<div class="border-yellow-400 border-green-400 border-red-400 border-blue-400"></div>
+<div class="bg-yellow-400 bg-green-400 bg-red-400 bg-blue-400"></div>
+<div class="text-yellow-400 text-green-400 text-red-400 text-blue-400"></div>
+
+<div
+    class="border-red-400 bg-red-400 my-4 ml-0 flex items-start rounded border-l-4 bg-opacity-10 p-5 dark:bg-darkBgAccent"
+    
+>
+    <div class="mr-2">
+        <i class="eva text-red-400 eva-minus-circle-outline text-2xl"></i>
+    </div><p style="margin: 0;">十里青山远，潮平路带沙。数声啼鸟怨年华。又是凄凉时候，在天涯。白露收残月，清风散晓霞。绿杨堤畔问荷花。记得年时沽酒，那人家。</p></div>
+
+<div class="border-yellow-400 border-green-400 border-red-400 border-blue-400"></div>
+<div class="bg-yellow-400 bg-green-400 bg-red-400 bg-blue-400"></div>
+<div class="text-yellow-400 text-green-400 text-red-400 text-blue-400"></div>
+
+<div
+    class="border-blue-400 bg-blue-400 my-4 ml-0 flex items-start rounded border-l-4 bg-opacity-10 p-5 dark:bg-darkBgAccent"
+    
+>
+    <div class="mr-2">
+        <i class="eva text-blue-400 eva-question-mark-circle-outline text-2xl"></i>
+    </div><p style="margin: 0;">十里青山远，潮平路带沙。数声啼鸟怨年华。又是凄凉时候，在天涯。白露收残月，清风散晓霞。绿杨堤畔问荷花。记得年时沽酒，那人家。</p></div>
+
+<div class="border-yellow-400 border-green-400 border-red-400 border-blue-400"></div>
+<div class="bg-yellow-400 bg-green-400 bg-red-400 bg-blue-400"></div>
+<div class="text-yellow-400 text-green-400 text-red-400 text-blue-400"></div>
+
+<div
+    class="border-green-400 bg-green-400 my-4 ml-0 flex items-start rounded border-l-4 bg-opacity-10 p-5 dark:bg-darkBgAccent"
+    
+>
+    <div class="mr-2">
+        <i class="eva text-green-400 eva-checkmark-circle-2-outline text-2xl"></i>
+    </div><p style="margin: 0;">十里青山远，潮平路带沙。数声啼鸟怨年华。又是凄凉时候，在天涯。白露收残月，清风散晓霞。绿杨堤畔问荷花。记得年时沽酒，那人家。</p></div>
+
+
+
+<h2 class="group " id="引用"
+    >引用<a href="#%e5%bc%95%e7%94%a8"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">quote</span> &gt;}}
+</span></span><span style="display:flex;"><span>十里青山远，潮平路带沙。数声啼鸟怨年华。又是凄凉时候，在天涯。白露收残月，清风散晓霞。绿杨堤畔问荷花。记得年时沽酒，那人家。
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#ff79c6">quote</span> &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote class="quote relative pl-10 text-gray-500 dark:text-gray-400"><p>十里青山远，潮平路带沙。数声啼鸟怨年华。又是凄凉时候，在天涯。白露收残月，清风散晓霞。绿杨堤畔问荷花。记得年时沽酒，那人家。</p></blockquote>
+
+
+
+<h2 class="group " id="居中引用"
+    >居中引用<a href="#%e5%b1%85%e4%b8%ad%e5%bc%95%e7%94%a8"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">quote-center</span> &gt;}}
+</span></span><span style="display:flex;"><span>十里青山远，潮平路带沙  
+</span></span><span style="display:flex;"><span>数声啼鸟怨年华  
+</span></span><span style="display:flex;"><span>又是凄凉时候，在天涯  
+</span></span><span style="display:flex;"><span>白露收残月，清风散晓霞  
+</span></span><span style="display:flex;"><span>绿杨堤畔问荷花  
+</span></span><span style="display:flex;"><span>记得年时沽酒，那人家
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#ff79c6">quote-center</span> &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote class="quote quote-center relative rounded-none border-y border-gray-200 py-4 text-center dark:border-darkBorder"><p>十里青山远，潮平路带沙<br>
+数声啼鸟怨年华<br>
+又是凄凉时候，在天涯<br>
+白露收残月，清风散晓霞<br>
+绿杨堤畔问荷花<br>
+记得年时沽酒，那人家</p></blockquote>
+
+
+
+<h2 class="group " id="标签"
+    >标签<a href="#%e6%a0%87%e7%ad%be"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>这是一个 {{&lt; <span style="color:#ff79c6">tag</span> <span style="color:#50fa7b">red</span> &#34;<span style="color:#50fa7b">红色标签</span>&#34; &gt;}}  
+</span></span><span style="display:flex;"><span>这是一个 {{&lt; <span style="color:#ff79c6">tag</span> <span style="color:#50fa7b">green</span> &#34;<span style="color:#50fa7b">绿色标签</span>&#34; &gt;}}  
+</span></span><span style="display:flex;"><span>这是一个 {{&lt; <span style="color:#ff79c6">tag</span> <span style="color:#50fa7b">blue</span> &#34;<span style="color:#50fa7b">蓝色标签</span>&#34; &gt;}}  
+</span></span><span style="display:flex;"><span>这是一个 {{&lt; <span style="color:#ff79c6">tag</span> <span style="color:#50fa7b">orange</span> &#34;<span style="color:#50fa7b">橘色标签</span>&#34; &gt;}}  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>这是一个 {{&lt; <span style="color:#ff79c6">tag-outlined</span> <span style="color:#50fa7b">red</span> &#34;<span style="color:#50fa7b">红色标签</span>&#34; &gt;}}  
+</span></span><span style="display:flex;"><span>这是一个 {{&lt; <span style="color:#ff79c6">tag-outlined</span> <span style="color:#50fa7b">green</span> &#34;<span style="color:#50fa7b">绿色标签</span>&#34; &gt;}}  
+</span></span><span style="display:flex;"><span>这是一个 {{&lt; <span style="color:#ff79c6">tag-outlined</span> <span style="color:#50fa7b">blue</span> &#34;<span style="color:#50fa7b">蓝色标签</span>&#34; &gt;}}  
+</span></span><span style="display:flex;"><span>这是一个 {{&lt; <span style="color:#ff79c6">tag-outlined</span> <span style="color:#50fa7b">orange</span> &#34;<span style="color:#50fa7b">橘色标签</span>&#34; &gt;}}  
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这是一个 <span class="bg-red-500 whitespace-nowrap rounded py-1 px-2 text-sm text-white">红色标签</span>
+<br>
+这是一个 <span class="bg-green-500 whitespace-nowrap rounded py-1 px-2 text-sm text-white">绿色标签</span>
+<br>
+这是一个 <span class="bg-blue-500 whitespace-nowrap rounded py-1 px-2 text-sm text-white">蓝色标签</span>
+<br>
+这是一个 <span class="bg-orange-500 whitespace-nowrap rounded py-1 px-2 text-sm text-white">橘色标签</span>
+</p>
+<p>这是一个 <span class="bg-red-500 text-red-500 whitespace-nowrap rounded bg-opacity-10 py-1 px-2 text-sm">红色标签</span>
+<br>
+这是一个 <span class="bg-green-500 text-green-500 whitespace-nowrap rounded bg-opacity-10 py-1 px-2 text-sm">绿色标签</span>
+<br>
+这是一个 <span class="bg-blue-500 text-blue-500 whitespace-nowrap rounded bg-opacity-10 py-1 px-2 text-sm">蓝色标签</span>
+<br>
+这是一个 <span class="bg-orange-500 text-orange-500 whitespace-nowrap rounded bg-opacity-10 py-1 px-2 text-sm">橘色标签</span>
+</p>
+
+
+<h2 class="group " id="进度条"
+    >进度条<a href="#%e8%bf%9b%e5%ba%a6%e6%9d%a1"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">progress</span> <span style="color:#50fa7b">80</span> <span style="color:#50fa7b">green</span> &#34;<span style="color:#50fa7b">进度条名称</span>&#34; &gt;}}
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">progress</span> <span style="color:#50fa7b">77</span>.<span style="color:#50fa7b">54</span> <span style="color:#50fa7b">red</span> &#34;<span style="color:#50fa7b">进度条名称</span>&#34; &gt;}}
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">progress</span> <span style="color:#50fa7b">123</span>.<span style="color:#50fa7b">45</span> <span style="color:#50fa7b">blue</span> &#34;<span style="color:#50fa7b">进度条名称</span>&#34; &gt;}}
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">progress</span> <span style="color:#50fa7b">11</span>.<span style="color:#50fa7b">11</span> <span style="color:#50fa7b">orange</span> &#34;<span style="color:#50fa7b">进度条名称</span>&#34; &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><div class="my-4">
+    <div class="flex justify-between">
+        <div>进度条名称</div>
+        <div>80%</div>
+    </div>
+    <div class="relative w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-300">
+        <div class="bg-green-400 h-2" style="width:80%;"></div>
+    </div>
+</div>
+
+<div class="my-4">
+    <div class="flex justify-between">
+        <div>进度条名称</div>
+        <div>77.54%</div>
+    </div>
+    <div class="relative w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-300">
+        <div class="bg-red-400 h-2" style="width:77.54%;"></div>
+    </div>
+</div>
+
+<div class="my-4">
+    <div class="flex justify-between">
+        <div>进度条名称</div>
+        <div>123.45%</div>
+    </div>
+    <div class="relative w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-300">
+        <div class="bg-blue-400 h-2" style="width:123.45%;"></div>
+    </div>
+</div>
+
+<div class="my-4">
+    <div class="flex justify-between">
+        <div>进度条名称</div>
+        <div>11.11%</div>
+    </div>
+    <div class="relative w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-300">
+        <div class="bg-orange-400 h-2" style="width:11.11%;"></div>
+    </div>
+</div>
+</p>
+
+
+<h2 class="group " id="折叠面板"
+    >折叠面板<a href="#%e6%8a%98%e5%8f%a0%e9%9d%a2%e6%9d%bf"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">accordion</span> &#34;<span style="color:#50fa7b">折叠面板</span>&#34; <span style="color:#50fa7b">open</span> &gt;}}
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">*</span> Vegetables
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">*</span> Fruits
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">*</span> Fish
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#ff79c6">accordion</span> &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><details class="accordion rounded  border dark:border-darkBorder" open>
+    <summary class="flex items-center px-4 py-2 font-bold before:mr-0.5 before:-mt-0.5 before:text-xl before:text-gray-400">折叠面板</summary>
+    <div class="border-t px-4 py-2  dark:border-darkBorder"><ul>
+<li>Vegetables</li>
+<li>Fruits</li>
+<li>Fish</li>
+</ul>
+</div>
+</details>
+
+
+
+<h2 class="group " id="分割线"
+    >分割线<a href="#%e5%88%86%e5%89%b2%e7%ba%bf"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">hr</span> &#34;<span style="color:#50fa7b">分割线</span>&#34; &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><fieldset class="my-16 border-t border-gray-300 dark:border-darkBorder">
+    <legend class="mx-auto my-0 px-2">分割线</legend>
+</fieldset>
+
+
+
+<h2 class="group " id="隐藏文字"
+    >隐藏文字<a href="#%e9%9a%90%e8%97%8f%e6%96%87%e5%ad%97"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>这是一段 {{&lt; <span style="color:#ff79c6">hidden-text</span> &#34;<span style="color:#50fa7b">隐藏文字</span>&#34; <span style="color:#50fa7b">blur</span> &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>这是一段 {{&lt; <span style="color:#ff79c6">hidden-text</span> &#34;<span style="color:#50fa7b">隐藏文字</span>&#34; &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这是一段 <span class="inline-block blur-sm filter transition ease-in-out hover:filter-none">隐藏文字</span></p>
+<p>这是一段 <span
+        class="relative inline-block leading-none after:pointer-events-none after:absolute after:left-0 after:top-0 after:z-50 after:block after:h-full after:w-full after:rounded after:bg-darkBg after:transition after:ease-in-out hover:after:bg-transparent dark:after:bg-darkText dark:hover:after:bg-transparent"
+        >隐藏文字</span
+    ></p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">hidden</span> <span style="color:#50fa7b">blur</span> &gt;}}
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&gt; </span><span style="text-decoration:underline">这是一个隐藏块
+</span></span></span><span style="display:flex;"><span><span style="text-decoration:underline"></span>{{&lt; /<span style="color:#ff79c6">hidden</span> &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">hidden</span> &gt;}}
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">*</span> Vegetables
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">*</span> Fruits
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">*</span> Fish
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#ff79c6">hidden</span> &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="blur-sm filter transition ease-in-out hover:filter-none"><blockquote>
+<p>这是一个隐藏块</p>
+</blockquote>
+</div>
+<div
+        class="relative after:pointer-events-none after:absolute after:left-0 after:top-0 after:z-50 after:block after:h-full after:w-full after:rounded after:bg-darkBg after:transition after:ease-in-out hover:after:bg-transparent dark:after:bg-darkText dark:hover:after:bg-transparent"
+    ><ul>
+<li>Vegetables</li>
+<li>Fruits</li>
+<li>Fish</li>
+</ul>
+</div>
+
+
+<h2 class="group " id="评分"
+    >评分<a href="#%e8%af%84%e5%88%86"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>我对海鲜饭的评价 {{&lt; <span style="color:#ff79c6">rating</span> <span style="color:#50fa7b">10</span> <span style="color:#50fa7b">6</span>&gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我对海鲜饭的评价 <span class="ml-1 inline-flex align-sub"><i class="eva eva-star mr-1 text-theme"></i><i class="eva eva-star mr-1 text-theme"></i><i class="eva eva-star mr-1 text-theme"></i><i class="eva eva-star mr-1 text-theme"></i><i class="eva eva-star mr-1 text-theme"></i><i class="eva eva-star mr-1 text-theme"></i><i class="eva eva-star-outline mr-1 text-gray-400"></i><i class="eva eva-star-outline mr-1 text-gray-400"></i><i class="eva eva-star-outline mr-1 text-gray-400"></i><i class="eva eva-star-outline mr-1 text-gray-400"></i></span>
+</p>
+
+
+<h2 class="group " id="卡片链接"
+    >卡片链接<a href="#%e5%8d%a1%e7%89%87%e9%93%be%e6%8e%a5"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">link-card</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;hugo-theme-luna&#34;</span> <span style="color:#50fa7b">desc</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;A simple, performance-first, SEO-friendly Hugo theme&#34;</span> <span style="color:#50fa7b">link</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://github.com/Ice-Hazymoon/hugo-theme-luna&#34;</span> <span style="color:#50fa7b">img</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://repository-images.githubusercontent.com/486781027/dc31a9ab-66d1-49b8-a225-4f85f2329f2e&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">link-card</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;hugo-theme-luna&#34;</span> <span style="color:#50fa7b">desc</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;A simple, performance-first, SEO-friendly Hugo theme&#34;</span> <span style="color:#50fa7b">link</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;https://github.com/Ice-Hazymoon/hugo-theme-luna&#34;</span> &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><a
+    href="https://github.com/Ice-Hazymoon/hugo-theme-luna"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="link-card my-4 flex w-full cursor-pointer flex-col-reverse justify-between rounded border transition ease-in-out before:hidden hover:bg-gray-100 dark:border-darkBorder hover:dark:bg-darkBg md:flex-row"
+>
+    <div class="flex flex-grow flex-col p-4">
+        <div class="flex-grow">
+            <div class="text-xl font-bold">hugo-theme-luna</div><div class="my-1 text-gray-400 line-clamp-2 dark:text-darkTextPlaceholder">A simple, performance-first, SEO-friendly Hugo theme</div></div><div class="flex items-center"><img class="link-card-img mr-1 h-3 w-3" src="https://www.google.cn/s2/favicons?domain=github.com" alt="" />
+                <div class="text-xs text-gray-400 line-clamp-1 dark:text-darkTextPlaceholder">https://github.com/Ice-Hazymoon/hugo-theme-luna</div>
+            </div></div><img class="link-card-img h-32 bg-white object-contain dark:bg-transparent" src="https://repository-images.githubusercontent.com/486781027/dc31a9ab-66d1-49b8-a225-4f85f2329f2e" alt="hugo-theme-luna" /></a>
+
+<a
+    href="https://github.com/Ice-Hazymoon/hugo-theme-luna"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="link-card my-4 flex w-full cursor-pointer flex-col-reverse justify-between rounded border transition ease-in-out before:hidden hover:bg-gray-100 dark:border-darkBorder hover:dark:bg-darkBg md:flex-row"
+>
+    <div class="flex flex-grow flex-col p-4">
+        <div class="flex-grow">
+            <div class="text-xl font-bold">hugo-theme-luna</div><div class="my-1 text-gray-400 line-clamp-2 dark:text-darkTextPlaceholder">A simple, performance-first, SEO-friendly Hugo theme</div></div><div class="flex items-center"><img class="link-card-img mr-1 h-3 w-3" src="https://www.google.cn/s2/favicons?domain=github.com" alt="" />
+                <div class="text-xs text-gray-400 line-clamp-1 dark:text-darkTextPlaceholder">https://github.com/Ice-Hazymoon/hugo-theme-luna</div>
+            </div></div></a>
+
+
+
+<h2 class="group " id="轮播图"
+    >轮播图<a href="#%e8%bd%ae%e6%92%ad%e5%9b%be"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">carousel</span> &#34;<span style="color:#50fa7b">https:</span>//<span style="color:#50fa7b">unsplash</span>.<span style="color:#50fa7b">it</span>/<span style="color:#50fa7b">1920</span>/<span style="color:#50fa7b">1080</span>/?<span style="color:#50fa7b">random</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">1&#34;</span> &#34;<span style="color:#50fa7b">https:</span>//<span style="color:#50fa7b">unsplash</span>.<span style="color:#50fa7b">it</span>/<span style="color:#50fa7b">1920</span>/<span style="color:#50fa7b">1080</span>/?<span style="color:#50fa7b">random</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">2&#34;</span> &#34;<span style="color:#50fa7b">https:</span>//<span style="color:#50fa7b">unsplash</span>.<span style="color:#50fa7b">it</span>/<span style="color:#50fa7b">1920</span>/<span style="color:#50fa7b">1080</span>/?<span style="color:#50fa7b">random</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">3&#34;</span> &#34;<span style="color:#50fa7b">https:</span>//<span style="color:#50fa7b">unsplash</span>.<span style="color:#50fa7b">it</span>/<span style="color:#50fa7b">1920</span>/<span style="color:#50fa7b">1080</span>/?<span style="color:#50fa7b">random</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">4&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">carousel</span> &#34;<span style="color:#50fa7b">4</span>.<span style="color:#50fa7b">jpg</span>&#34; &#34;<span style="color:#50fa7b">7</span>.<span style="color:#50fa7b">jpg</span>&#34; &#34;<span style="color:#50fa7b">9</span>.<span style="color:#50fa7b">jpg</span>&#34; &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="carousel">
+    <div class="slider-wrapper"><input id="slide-532764189-0"checked="checked"name="slide-532764189-slides" type="radio" /><input id="slide-532764189-1"name="slide-532764189-slides" type="radio" /><input id="slide-532764189-2"name="slide-532764189-slides" type="radio" /><input id="slide-532764189-3"name="slide-532764189-slides" type="radio" /><div class="slider-arrow-nav"><label class="nav-arrow prev" for="slide-532764189-0"></label><label class="nav-arrow prev" for="slide-532764189-1"></label><label class="nav-arrow prev" for="slide-532764189-2"></label><label class="nav-arrow prev" for="slide-532764189-3"></label></div>
+        <div class="slider-arrow-nav"><label class="nav-arrow next" for="slide-532764189-0"></label><label class="nav-arrow next" for="slide-532764189-1"></label><label class="nav-arrow next" for="slide-532764189-2"></label><label class="nav-arrow next" for="slide-532764189-3"></label></div>
+        <div class="slider-nav"><label class="nav-button" for="slide-532764189-0"></label><label class="nav-button" for="slide-532764189-1"></label><label class="nav-button" for="slide-532764189-2"></label><label class="nav-button" for="slide-532764189-3"></label></div>
+        <div class="slider-content"><div class="slide slide-532764189-0">
+                    <img src="https://unsplash.it/1920/1080/?random=1" />
+                    <img src="https://unsplash.it/1920/1080/?random=1" alt="" />
+                </div><div class="slide slide-532764189-1">
+                    <img src="https://unsplash.it/1920/1080/?random=2" />
+                    <img src="https://unsplash.it/1920/1080/?random=2" alt="" />
+                </div><div class="slide slide-532764189-2">
+                    <img src="https://unsplash.it/1920/1080/?random=3" />
+                    <img src="https://unsplash.it/1920/1080/?random=3" alt="" />
+                </div><div class="slide slide-532764189-3">
+                    <img src="https://unsplash.it/1920/1080/?random=4" />
+                    <img src="https://unsplash.it/1920/1080/?random=4" alt="" />
+                </div></div>
+    </div>
+    <style>#slide-532764189-0:checked ~ .slider-content .slide-532764189-0{
+                
+                opacity:1;
+            }
+            #slide-532764189-0:checked ~ .slider-nav .nav-button[for="slide-532764189-0"]{
+                    background: rgba(255,255,255,1);
+            }
+            #slide-532764189-0:checked ~ .slider-arrow-nav .nav-arrow.next[for="slide-532764189-0"] + .nav-arrow{
+                z-index:4;
+            }
+            #slide-532764189-0:checked ~ .slider-arrow-nav .nav-arrow.next[for="slide-532764189-0"]:last-of-type{
+                z-index:2;
+            }
+            #slide-532764189-0:checked ~ .slider-arrow-nav .nav-arrow.prev[for="slide-532764189-0"],
+            #slide-532764189-0:checked ~ .slider-arrow-nav .nav-arrow.prev[for="slide-532764189-0"] ~ .nav-arrow.prev{
+                z-index:2;
+            }#slide-532764189-1:checked ~ .slider-content .slide-532764189-1{
+                
+                opacity:1;
+            }
+            #slide-532764189-1:checked ~ .slider-nav .nav-button[for="slide-532764189-1"]{
+                    background: rgba(255,255,255,1);
+            }
+            #slide-532764189-1:checked ~ .slider-arrow-nav .nav-arrow.next[for="slide-532764189-1"] + .nav-arrow{
+                z-index:4;
+            }
+            #slide-532764189-1:checked ~ .slider-arrow-nav .nav-arrow.next[for="slide-532764189-1"]:last-of-type{
+                z-index:2;
+            }
+            #slide-532764189-1:checked ~ .slider-arrow-nav .nav-arrow.prev[for="slide-532764189-1"],
+            #slide-532764189-1:checked ~ .slider-arrow-nav .nav-arrow.prev[for="slide-532764189-1"] ~ .nav-arrow.prev{
+                z-index:2;
+            }#slide-532764189-2:checked ~ .slider-content .slide-532764189-2{
+                
+                opacity:1;
+            }
+            #slide-532764189-2:checked ~ .slider-nav .nav-button[for="slide-532764189-2"]{
+                    background: rgba(255,255,255,1);
+            }
+            #slide-532764189-2:checked ~ .slider-arrow-nav .nav-arrow.next[for="slide-532764189-2"] + .nav-arrow{
+                z-index:4;
+            }
+            #slide-532764189-2:checked ~ .slider-arrow-nav .nav-arrow.next[for="slide-532764189-2"]:last-of-type{
+                z-index:2;
+            }
+            #slide-532764189-2:checked ~ .slider-arrow-nav .nav-arrow.prev[for="slide-532764189-2"],
+            #slide-532764189-2:checked ~ .slider-arrow-nav .nav-arrow.prev[for="slide-532764189-2"] ~ .nav-arrow.prev{
+                z-index:2;
+            }#slide-532764189-3:checked ~ .slider-content .slide-532764189-3{
+                
+                opacity:1;
+            }
+            #slide-532764189-3:checked ~ .slider-nav .nav-button[for="slide-532764189-3"]{
+                    background: rgba(255,255,255,1);
+            }
+            #slide-532764189-3:checked ~ .slider-arrow-nav .nav-arrow.next[for="slide-532764189-3"] + .nav-arrow{
+                z-index:4;
+            }
+            #slide-532764189-3:checked ~ .slider-arrow-nav .nav-arrow.next[for="slide-532764189-3"]:last-of-type{
+                z-index:2;
+            }
+            #slide-532764189-3:checked ~ .slider-arrow-nav .nav-arrow.prev[for="slide-532764189-3"],
+            #slide-532764189-3:checked ~ .slider-arrow-nav .nav-arrow.prev[for="slide-532764189-3"] ~ .nav-arrow.prev{
+                z-index:2;
+            }</style>
+</div>
+
+<div class="carousel">
+    <div class="slider-wrapper"><input id="slide-729345618-0"checked="checked"name="slide-729345618-slides" type="radio" /><input id="slide-729345618-1"name="slide-729345618-slides" type="radio" /><input id="slide-729345618-2"name="slide-729345618-slides" type="radio" /><div class="slider-arrow-nav"><label class="nav-arrow prev" for="slide-729345618-0"></label><label class="nav-arrow prev" for="slide-729345618-1"></label><label class="nav-arrow prev" for="slide-729345618-2"></label></div>
+        <div class="slider-arrow-nav"><label class="nav-arrow next" for="slide-729345618-0"></label><label class="nav-arrow next" for="slide-729345618-1"></label><label class="nav-arrow next" for="slide-729345618-2"></label></div>
+        <div class="slider-nav"><label class="nav-button" for="slide-729345618-0"></label><label class="nav-button" for="slide-729345618-1"></label><label class="nav-button" for="slide-729345618-2"></label></div>
+        <div class="slider-content"><div class="slide slide-729345618-0">
+                    <img src="1.jpg" />
+                    <img src="1.jpg" alt="" />
+                </div><div class="slide slide-729345618-1">
+                    <img src="2.jpg" />
+                    <img src="2.jpg" alt="" />
+                </div><div class="slide slide-729345618-2">
+                    <img src="3.jpg" />
+                    <img src="3.jpg" alt="" />
+                </div></div>
+    </div>
+    <style>#slide-729345618-0:checked ~ .slider-content .slide-729345618-0{
+                
+                opacity:1;
+            }
+            #slide-729345618-0:checked ~ .slider-nav .nav-button[for="slide-729345618-0"]{
+                    background: rgba(255,255,255,1);
+            }
+            #slide-729345618-0:checked ~ .slider-arrow-nav .nav-arrow.next[for="slide-729345618-0"] + .nav-arrow{
+                z-index:4;
+            }
+            #slide-729345618-0:checked ~ .slider-arrow-nav .nav-arrow.next[for="slide-729345618-0"]:last-of-type{
+                z-index:2;
+            }
+            #slide-729345618-0:checked ~ .slider-arrow-nav .nav-arrow.prev[for="slide-729345618-0"],
+            #slide-729345618-0:checked ~ .slider-arrow-nav .nav-arrow.prev[for="slide-729345618-0"] ~ .nav-arrow.prev{
+                z-index:2;
+            }#slide-729345618-1:checked ~ .slider-content .slide-729345618-1{
+                
+                opacity:1;
+            }
+            #slide-729345618-1:checked ~ .slider-nav .nav-button[for="slide-729345618-1"]{
+                    background: rgba(255,255,255,1);
+            }
+            #slide-729345618-1:checked ~ .slider-arrow-nav .nav-arrow.next[for="slide-729345618-1"] + .nav-arrow{
+                z-index:4;
+            }
+            #slide-729345618-1:checked ~ .slider-arrow-nav .nav-arrow.next[for="slide-729345618-1"]:last-of-type{
+                z-index:2;
+            }
+            #slide-729345618-1:checked ~ .slider-arrow-nav .nav-arrow.prev[for="slide-729345618-1"],
+            #slide-729345618-1:checked ~ .slider-arrow-nav .nav-arrow.prev[for="slide-729345618-1"] ~ .nav-arrow.prev{
+                z-index:2;
+            }#slide-729345618-2:checked ~ .slider-content .slide-729345618-2{
+                
+                opacity:1;
+            }
+            #slide-729345618-2:checked ~ .slider-nav .nav-button[for="slide-729345618-2"]{
+                    background: rgba(255,255,255,1);
+            }
+            #slide-729345618-2:checked ~ .slider-arrow-nav .nav-arrow.next[for="slide-729345618-2"] + .nav-arrow{
+                z-index:4;
+            }
+            #slide-729345618-2:checked ~ .slider-arrow-nav .nav-arrow.next[for="slide-729345618-2"]:last-of-type{
+                z-index:2;
+            }
+            #slide-729345618-2:checked ~ .slider-arrow-nav .nav-arrow.prev[for="slide-729345618-2"],
+            #slide-729345618-2:checked ~ .slider-arrow-nav .nav-arrow.prev[for="slide-729345618-2"] ~ .nav-arrow.prev{
+                z-index:2;
+            }</style>
+</div>
+
+
+
+<h2 class="group " id="时间轴"
+    >时间轴<a href="#%e6%97%b6%e9%97%b4%e8%bd%b4"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">timeline</span> &#34;<span style="color:#50fa7b">2018年01月01日</span> <span style="color:#50fa7b">今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面</span>&#34; &#34;<span style="color:#50fa7b">2018年01月02日</span> <span style="color:#50fa7b">今天吃火锅</span>&#34; &#34;<span style="color:#50fa7b">2018年01月03日</span> <span style="color:#50fa7b">今天吃麻辣烫</span>&#34; &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="timeline my-4"><div class="timeline-item">
+            <span>2018年01月01日 今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面今天吃泡面</span>
+        </div><div class="timeline-item">
+            <span>2018年01月02日 今天吃火锅</span>
+        </div><div class="timeline-item">
+            <span>2018年01月03日 今天吃麻辣烫</span>
+        </div></div>
+
+
+
+<h2 class="group " id="画廊排版"
+    >画廊排版<a href="#%e7%94%bb%e5%bb%8a%e6%8e%92%e7%89%88"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>![](1.jpg) ![](2.jpg) ![](3.jpg)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><figure
+        
+            class="gallery-image" style=" flex-grow:80; flex-basis:192px"
+        
+    >
+        <picture><source data-srcset="/2022/05/02/shortcodes.html/1_hu79ddc4291eebdc7061374d2843192e37_77304_640x0_resize_q95_h2_catmullrom.webp 640w, /2022/05/02/shortcodes.html/1_hu79ddc4291eebdc7061374d2843192e37_77304_1080x0_resize_q95_h2_catmullrom.webp 1080w" type="image/webp" /><img
+                data-src="/2022/05/02/shortcodes.html/1.jpg"
+                src="/2022/05/02/shortcodes.html/1_hu79ddc4291eebdc7061374d2843192e37_77304_817183730179125d04a2ea16f8268b2f.jpg"width="1000"height="1250"data-srcset="/2022/05/02/shortcodes.html/1_hu79ddc4291eebdc7061374d2843192e37_77304_640x0_resize_q95_catmullrom.jpg 640w, /2022/05/02/shortcodes.html/1_hu79ddc4291eebdc7061374d2843192e37_77304_1080x0_resize_q95_catmullrom.jpg 1080w"data-zoomable
+                data-lazyload data-lazyload-blur
+            />
+        </picture></figure>
+    <noscript data-lazyload-noscript>
+        <img
+            src="/2022/05/02/shortcodes.html/1.jpg"width="1000"height="1250"srcset="/2022/05/02/shortcodes.html/1_hu79ddc4291eebdc7061374d2843192e37_77304_640x0_resize_q95_catmullrom.jpg 640w, /2022/05/02/shortcodes.html/1_hu79ddc4291eebdc7061374d2843192e37_77304_1080x0_resize_q95_catmullrom.jpg 1080w"/>
+    </noscript> <figure
+        
+            class="gallery-image" style=" flex-grow:149; flex-basis:358px"
+        
+    >
+        <picture><source data-srcset="/2022/05/02/shortcodes.html/2_huf959fecd404ad7cb44cf3bc355410550_41667_640x0_resize_q95_h2_catmullrom.webp 640w, /2022/05/02/shortcodes.html/2_huf959fecd404ad7cb44cf3bc355410550_41667_1080x0_resize_q95_h2_catmullrom.webp 1080w" type="image/webp" /><img
+                data-src="/2022/05/02/shortcodes.html/2.jpg"
+                src="/2022/05/02/shortcodes.html/2_huf959fecd404ad7cb44cf3bc355410550_41667_4d7cc022b42ba4adc7aa9322b13e3c16.jpg"width="1000"height="669"data-srcset="/2022/05/02/shortcodes.html/2_huf959fecd404ad7cb44cf3bc355410550_41667_640x0_resize_q95_catmullrom.jpg 640w, /2022/05/02/shortcodes.html/2_huf959fecd404ad7cb44cf3bc355410550_41667_1080x0_resize_q95_catmullrom.jpg 1080w"data-zoomable
+                data-lazyload data-lazyload-blur
+            />
+        </picture></figure>
+    <noscript data-lazyload-noscript>
+        <img
+            src="/2022/05/02/shortcodes.html/2.jpg"width="1000"height="669"srcset="/2022/05/02/shortcodes.html/2_huf959fecd404ad7cb44cf3bc355410550_41667_640x0_resize_q95_catmullrom.jpg 640w, /2022/05/02/shortcodes.html/2_huf959fecd404ad7cb44cf3bc355410550_41667_1080x0_resize_q95_catmullrom.jpg 1080w"/>
+    </noscript> <figure
+        
+            class="gallery-image" style=" flex-grow:107; flex-basis:257px"
+        
+    >
+        <picture><source data-srcset="/2022/05/02/shortcodes.html/3_hu22f66f16c4a8a28362556f54e3184005_115421_640x0_resize_q95_h2_catmullrom.webp 640w, /2022/05/02/shortcodes.html/3_hu22f66f16c4a8a28362556f54e3184005_115421_1080x0_resize_q95_h2_catmullrom.webp 1080w" type="image/webp" /><img
+                data-src="/2022/05/02/shortcodes.html/3.jpg"
+                src="/2022/05/02/shortcodes.html/3_hu22f66f16c4a8a28362556f54e3184005_115421_bb398598793824e0e1719205d24fb57b.jpg"width="1000"height="932"data-srcset="/2022/05/02/shortcodes.html/3_hu22f66f16c4a8a28362556f54e3184005_115421_640x0_resize_q95_catmullrom.jpg 640w, /2022/05/02/shortcodes.html/3_hu22f66f16c4a8a28362556f54e3184005_115421_1080x0_resize_q95_catmullrom.jpg 1080w"data-zoomable
+                data-lazyload data-lazyload-blur
+            />
+        </picture></figure>
+    <noscript data-lazyload-noscript>
+        <img
+            src="/2022/05/02/shortcodes.html/3.jpg"width="1000"height="932"srcset="/2022/05/02/shortcodes.html/3_hu22f66f16c4a8a28362556f54e3184005_115421_640x0_resize_q95_catmullrom.jpg 640w, /2022/05/02/shortcodes.html/3_hu22f66f16c4a8a28362556f54e3184005_115421_1080x0_resize_q95_catmullrom.jpg 1080w"/>
+    </noscript></p>
+
+
+<h2 class="group " id="选项卡"
+    >选项卡<a href="#%e9%80%89%e9%a1%b9%e5%8d%a1"
+        ><i class="eva eva-link ml-3 align-middle text-theme opacity-0 transition ease-in-out group-hover:opacity-100"></i></a
+></h2>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">tab-view</span> &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">tab-panel</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;中文&#34;</span> <span style="color:#50fa7b">checked</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">true</span> &gt;}}
+</span></span><span style="display:flex;"><span>百合花（学名：Lilium）通称百合花，是百合目百合科的一属，为多年生草本球根植物，属内物种繁多，经常作为观赏植物。主要分布在亚洲东部、欧洲、北美洲等北半球温带地区，全球已发现有至少96个品种，其中5种产于台湾。近年更有不少经过人工杂交而产生的新品种，如OT百合、东方型百合、玫瑰百合等。百合属对猫来说有剧毒。
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#ff79c6">tab-panel</span> &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">tab-panel</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;English&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>Lilium is a genus of herbaceous flowering plants growing from bulbs, all with large prominent flowers. They are the true lilies. Lilies are a group of flowering plants which are important in culture and literature in much of the world. Most species are native to the northern hemisphere and their range is temperate climates and extends into the subtropics. Many other plants have &#34;lily&#34; in their common names, but do not belong to the same genus and are therefore not true lilies.
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#ff79c6">tab-panel</span> &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#ff79c6">tab-panel</span> <span style="color:#50fa7b">name</span><span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Español&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>Las especies de Lilium, comúnmente llamadas azucenas o lirios, constituyen un género con alrededor de 110 integrantes que se incluye dentro de la familia de las liliáceas. Los lirios son herbáceas perennes de tallos erectos con numerosas hojas alternas, lineares a lance balas. Crecen a partir de bulbos formados por capas de escamas carnosas sin túnica.
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#ff79c6">tab-panel</span> &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#ff79c6">tab-view</span> &gt;}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="tabs my-4 flex flex-wrap">
+
+<input type="radio" name="tabs" id="tab-462951837-"checked="checked">
+<label class="px-4 py-2 font-bold cursor-pointer block order-1" for="tab-462951837-">中文</label>
+<div class="tab p-4 hidden w-full order-last grow border-t border-gray-200 dark:border-gray-600">百合花（学名：Lilium）通称百合花，是百合目百合科的一属，为多年生草本球根植物，属内物种繁多，经常作为观赏植物。主要分布在亚洲东部、欧洲、北美洲等北半球温带地区，全球已发现有至少96个品种，其中5种产于台湾。近年更有不少经过人工杂交而产生的新品种，如OT百合、东方型百合、玫瑰百合等。百合属对猫来说有剧毒。</div>
+
+<input type="radio" name="tabs" id="tab-356879241-">
+<label class="px-4 py-2 font-bold cursor-pointer block order-1" for="tab-356879241-">English</label>
+<div class="tab p-4 hidden w-full order-last grow border-t border-gray-200 dark:border-gray-600">Lilium is a genus of herbaceous flowering plants growing from bulbs, all with large prominent flowers. They are the true lilies. Lilies are a group of flowering plants which are important in culture and literature in much of the world. Most species are native to the northern hemisphere and their range is temperate climates and extends into the subtropics. Many other plants have &ldquo;lily&rdquo; in their common names, but do not belong to the same genus and are therefore not true lilies.</div>
+
+<input type="radio" name="tabs" id="tab-431826759-">
+<label class="px-4 py-2 font-bold cursor-pointer block order-1" for="tab-431826759-">Español</label>
+<div class="tab p-4 hidden w-full order-last grow border-t border-gray-200 dark:border-gray-600">Las especies de Lilium, comúnmente llamadas azucenas o lirios, constituyen un género con alrededor de 110 integrantes que se incluye dentro de la familia de las liliáceas. Los lirios son herbáceas perennes de tallos erectos con numerosas hojas alternas, lineares a lance balas. Crecen a partir de bulbos formados por capas de escamas carnosas sin túnica.</div>
+
+</div>
+</section><div class="px-6 pb-5 pt-4 text-center text-xl text-gray-500 md:px-10 md:pb-10 md:pt-14"><a
+                class="mr-4 inline-flex h-5 w-5 items-center"
+                title="分享到 Twitter"
+                href="https://twitter.com/share?&text=%e4%b8%80%e4%ba%9b%e7%9f%ad%e4%bb%a3%e7%a0%81%e7%a4%ba%e4%be%8b&url=https://hugo-theme-luna.imiku.me/2022/05/02/shortcodes.html/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="eva eva-twitter hover:text-theme"></i
+            ></a><a
+                class="mr-4 inline-flex h-5 w-5 items-center"
+                title="分享到 Facebook"
+                href="https://www.facebook.com/sharer.php?u=https://hugo-theme-luna.imiku.me/2022/05/02/shortcodes.html/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="eva eva-facebook hover:text-theme"></i
+            ></a><a
+                class="mr-4 inline-flex h-5 w-5 items-center"
+                title="分享到 微博"
+                href="https://service.weibo.com/share/share.php?url=https://hugo-theme-luna.imiku.me/2022/05/02/shortcodes.html/&title=%e7%9f%ad%e4%bb%a3%e7%a0%81%ef%bc%88Shortcodes%ef%bc%89&sudaref=hugo-theme-luna.imiku.me"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <svg
+                    class="inline-block h-5 w-5 fill-current hover:text-theme"
+                    viewBox="0 0 1193 1024"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    p-id="2681"
+                    width="200"
+                    height="200"
+                >
+                    <path
+                        d="M456.991736 557.336482c-107.598583 0-194.644628 74.956316-194.644629 166.838252s87.046045 166.838253 194.644629 166.838253c107.598583 0 194.644628-74.956316 194.644628-166.838253s-87.046045-166.838253-194.644628-166.838252zM391.707202 822.101535c-36.269185 0-66.493506-27.806375-66.493507-62.866588s29.015348-62.866588 66.493507-62.866588c36.269185 0 66.493506 27.806375 66.493506 62.866588S427.976387 822.101535 391.707202 822.101535z m93.090909-91.881936c-14.507674 0-26.597403-12.089728-26.597403-26.597403s12.089728-26.597403 26.597403-26.597403 26.597403 12.089728 26.597403 26.597403-12.089728 26.597403-26.597403 26.597403zM239.376623 281.690673C97.9268 394.125148-18.134593 600.859504 30.224321 661.308146c32.642267 41.105077 59.239669-19.343566 124.524203-89.46399 30.224321-32.642267 77.374262-54.403778 122.106258-90.672964 20.552538-16.92562 197.062574-35.060213 230.913813-35.060212 97.9268-99.135773 114.85242-207.943329 74.956316-258.720189-48.358914-59.239669-201.898465-16.92562-343.348288 94.299882z"
+                        p-id="2682"
+                    ></path>
+                    <path
+                        d="M808.802834 560.9634C906.729634 461.827627 911.565525 377.199528 870.460449 326.422668c-47.149941-60.448642-211.570248-32.642267-351.811098 78.583235"
+                        p-id="2683"
+                    ></path>
+                    <path
+                        d="M605.695396 353.020071c-14.507674 8.46281-25.38843 12.089728-29.015349 7.253837-1.208973-2.417946-1.208973-6.044864 1.208973-9.671783-16.92562-1.208973-33.85124-1.208973-50.776859-1.208973C235.749705 349.393152 0 500.514758 0 686.696576s235.749705 337.303424 527.112161 337.303424 527.112161-151.121606 527.11216-337.303424c0-170.465171-194.644628-309.497048-448.528925-333.676505zM481.171192 959.924439C275.645809 959.924439 108.807556 847.489965 108.807556 708.458087s166.838253-251.466352 372.363636-251.466351 372.363636 112.434475 372.363637 251.466351-166.838253 251.466352-372.363637 251.466352z"
+                        p-id="2684"
+                    ></path>
+                    <path
+                        d="M1021.582054 423.140496c-3.626919 0-6.044864 0-9.671782-1.208973-18.134593-4.835891-29.015348-24.179457-22.970485-42.31405 2.417946-7.253837 3.626919-16.92562 3.626919-29.015348 0-65.284534-53.194805-119.688312-119.688312-119.688312-19.343566 0-33.85124-15.716647-33.851239-33.851239s15.716647-33.85124 33.851239-33.85124c103.971665 0 187.390791 84.628099 187.390791 187.390791 0 18.134593-2.417946 33.85124-6.044864 48.358914-4.835891 14.507674-18.134593 24.179457-32.642267 24.179457z"
+                        p-id="2685"
+                    ></path>
+                    <path
+                        d="M1146.106257 473.917355c-2.417946 0-6.044864 0-8.46281-1.208972-20.552538-4.835891-32.642267-25.38843-27.806375-45.940969 6.044864-24.179457 8.46281-47.149941 8.46281-71.329397C1118.299882 201.898465 991.357733 74.956316 836.609209 74.956316c-20.552538 0-37.478158-16.92562-37.478158-37.478158S816.056671 0 836.609209 0c197.062574 0 356.646989 159.584416 356.646989 356.646989 0 29.015348-3.626919 59.239669-10.880755 88.255018-3.626919 18.134593-19.343566 29.015348-36.269186 29.015348z"
+                        p-id="2686"
+                    ></path>
+                </svg>
+            </a><i class="eva eva-copy mr-4 cursor-pointer hover:text-theme" title="复制链接" data-clipboard-text="https://hugo-theme-luna.imiku.me/2022/05/02/shortcodes.html/"></i><div class="group relative hidden cursor-pointer sm:inline-block">
+                <i title="二维码" class="eva show-qrcode eva-smartphone hover:text-theme"></i>
+                <div
+                    class="qrcode-wrapper pointer-events-none absolute left-2/4 bottom-10 h-32 w-32 -translate-x-1/2 overflow-hidden rounded border border-gray-300 bg-white opacity-0 transition duration-300 ease-[ease] group-hover:opacity-100"
+                >
+                    <img class="h-full w-full" src="https://www.lofter.com/genBitmaxImage?url=https://hugo-theme-luna.imiku.me/2022/05/02/shortcodes.html/" alt="二维码" />
+                </div>
+            </div></div>
+<div class="border-b dark:border-darkBorder"></div><div class="flex justify-between p-4 text-xl md:text-2xl">
+    <div>
+        <a
+            href="/2022/04/15/flower-gallery.html/"
+            title="画廊（春）"
+            class="invisible flex cursor-pointer items-center text-gray-500 transition duration-300 ease-[ease] hover:text-theme dark:text-darkTextPlaceholder dark:hover:text-darkText"style="visibility: visible;">
+            <span class="flex items-center text-5xl opacity-70 dark:bg-opacity-100">
+                <i class="eva eva-chevron-left-outline"></i>
+            </span>
+            <span>上一篇</span>
+        </a>
+    </div><a
+        href=""
+        title=""
+        class="invisible flex cursor-pointer items-center text-gray-500 transition duration-300 ease-[ease] hover:text-theme dark:text-darkTextPlaceholder dark:hover:text-darkText">
+        <span>下一篇</span>
+        <span class="flex items-center text-5xl opacity-70 dark:bg-opacity-100">
+            <i class="eva eva-chevron-right-outline"></i>
+        </span>
+    </a>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+                </main><footer>
+    <div
+        class="com-footer flex flex-col items-center border-t py-4 px-6 text-sm leading-none text-gray-600 dark:border-darkBorder dark:text-darkTextPlaceholder md:flex-row md:justify-between"
+    >
+        <div class="mb-2 flex items-center justify-between text-center md:mb-0">
+            <span class="">© 2022 - 2022</span>
+            <span class="mx-2 opacity-50"> | </span>由 <a data-no-swup class="mx-1 font-bold hover:text-theme" href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> <span class="text-xs opacity-70">❤</span> <a data-no-swup class="mx-1 font-bold hover:text-theme" href="https://github.com/Ice-Hazymoon/hugo-theme-luna" target="_blank" rel="noopener noreferrer">Luna</a> 驱动</div>
+
+        <div class="flex items-center"><span class="mx-2 hidden opacity-50 md:block"> | </span><a data-no-swup href="https://hugo-theme-luna.imiku.me/index.xml" target="_blank" class="mr-2 hover:text-theme"><svg t="1650887361919" class="mr-0.5 w-96 w-3 fill-current text-inherit inline-block align-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3091"><path d="M320.16155 831.918c0 70.738-57.344 128.082-128.082 128.082S63.99955 902.656 63.99955 831.918s57.344-128.082 128.082-128.082 128.08 57.346 128.08 128.082z m351.32 94.5c-16.708-309.2-264.37-557.174-573.9-573.9C79.31155 351.53 63.99955 366.21 63.99955 384.506v96.138c0 16.83 12.98 30.944 29.774 32.036 223.664 14.568 402.946 193.404 417.544 417.544 1.094 16.794 15.208 29.774 32.036 29.774h96.138c18.298 0.002 32.978-15.31 31.99-33.58z m288.498 0.576C943.19155 459.354 566.92955 80.89 97.00555 64.02 78.94555 63.372 63.99955 77.962 63.99955 96.032v96.136c0 17.25 13.67 31.29 30.906 31.998 382.358 15.678 689.254 322.632 704.93 704.93 0.706 17.236 14.746 30.906 31.998 30.906h96.136c18.068-0.002 32.658-14.948 32.01-33.008z" p-id="3092"></path></svg><span>RSS</span>
+                </a><a data-no-swup href="https://hugo-theme-luna.imiku.me/sitemap.xml" target="_blank" class="mr-2 hover:text-theme"><svg t="1650887940556" class="mr-0.5 w-3 fill-current text-inherit inline-block align-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6291"><path d="M950.044 625.778h-68.266v-56.89c0-45.51-39.822-85.332-85.334-85.332h-256v-85.334h68.267c39.822 0 73.956-34.133 73.956-73.955V130.844c0-39.822-34.134-73.955-73.956-73.955H415.29c-39.822 0-73.956 34.133-73.956 73.955v193.423c0 39.822 34.134 73.955 73.956 73.955h68.267v85.334h-256c-45.512 0-85.334 39.822-85.334 85.333v56.889H73.956C34.133 625.778 0 659.91 0 699.733v193.423c0 39.822 34.133 73.955 73.956 73.955h193.422c39.822 0 73.955-34.133 73.955-73.955V699.733c0-39.822-34.133-73.955-73.955-73.955H199.11v-56.89c0-17.066 11.378-28.444 28.445-28.444h568.888c17.067 0 28.445 11.378 28.445 28.445v56.889h-68.267c-39.822 0-73.955 34.133-73.955 73.955v193.423c0 39.822 34.133 73.955 73.955 73.955h193.422c39.823 0 73.956-34.133 73.956-73.955V699.733c0-39.822-34.133-73.955-73.956-73.955z" p-id="6292"></path></svg><span>Sitemap</span>
+                </a><div id="google_translate_element" class="overflow-hidden rounded border dark:border-darkBorder"></div></div><div id="run-time" class="mt-2 flex-grow text-right md:mt-0">
+    <span>运行时间： </span><b id="run-time-d">0</b>
+    <span class="text-xs"> 天 </span>
+    <b id="run-time-h">0</b>
+    <span class="text-xs"> 小时 </span>
+    <b id="run-time-m">0</b>
+    <span class="text-xs"> 分钟 </span>
+    <b id="run-time-s">0</b>
+    <span class="text-xs"> 秒</span>
+</div>
+</div>
+    <script type="text/javascript">
+window.__theme = {
+    cdn: '',
+    pjax: true ,
+    isServer: false ,
+    $version:"",
+    lang: 'zh-cn',
+    imageZoom: true ,
+    lazyload: true ,
+    bionicReading: true ,
+    backtop: true ,
+    pangu: true ,
+    autoDarkMode: false ,
+    googleAnalytics:false,
+    hugoEncrypt: {
+        wrongPasswordText: '密码错误',
+        userStorage:window['sessionStorage'],
+    },
+    assets: {
+        error_svg: "\/images\/error.svg",
+        search_svg: "\/images\/search.svg",
+    },
+    i18n: {
+        untitled: "无标题",
+        copySuccess: "复制成功",
+        copyFailed: "复制失败，请手动复制",
+        copyCode: "复制代码",
+        searchLoadFailure: "初始化搜索引擎失败",
+        searchInput: "请输入内容",
+        searchResults: (results, keyword) =>`关键字 <span class="text-theme">${keyword}</span> 中共找到 <span class="text-theme">${results}</span> 条结果`,
+    },creatTime: "2022\/05\/29"}
+</script>
+<script type="text/javascript" src="/ts/main.de5f1984bc2a6d6adee3c6be8fe1fcc8cdb58d3ef3f40cb1c4517df0401c1b06.js" defer integrity="sha256-3l8ZhLwqbWre48a&#43;j&#43;H8yM21jT7z9AyxxFF98EAcGwY="></script><script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('\/sw.js');
+        });
+    }
+</script>
+<script type="text/javascript" src="/translate-google.3d30b8b1f31d88c727eb9f914db18c2c324e882148d41dea4ac3703767b3cc5c.js" defer integrity="sha256-PTC4sfMdiMcn65&#43;RTbGMLDJOiCFI1B3qSsNwN2ezzFw="></script><script type="text/javascript">
+    window.translateelement_styles = "\/sass\/translateelement.min.c65796c6c3e4d48c75f72776948be83c5c448d1c5cc466b996b00657c558d28a.css";
+    function googleTranslateElementInit(){
+        new google.translate.TranslateElement({
+            pageLanguage: 'zh-cn',
+            includedLanguages: 'af,ga,sq,it,ar,ja,az,kn,eu,ko,bn,la,be,lv,bg,lt,ca,mk,zh-CN,ms,zh-TW,mt,hr,no,cs,fa,da,pl,nl,pt,en,ro,eo,ru,et,sr,tl,sk,fi,sl,fr,es,gl,sw,ka,sv,de,ta,el,te,gu,th,ht,tr,iw,uk,hi,ur,hu,vi,is,cy,id,yi',
+            autoDisplay:false
+        },'google_translate_element');
+    }
+</script>
+
+
+
+
+
+<script>
+    
+    
+</script>
+
+<script data-swup-reload-script>
+    
+    
+</script>
+</footer>
+</div>
+        </div><a
+        href="#nav"
+        title="返回顶部"
+        id="back-top"
+        class="fixed right-6 bottom-9 z-10 translate-y-3 scale-90 cursor-pointer rounded-full bg-white opacity-0 transition duration-300 ease-[ease] dark:bg-darkBgAccent sm:scale-100"
+    >
+        <div class="relative">
+            <div class="absolute left-0 top-0 flex h-full w-full items-center justify-center text-xl">
+                <i class="eva eva-arrow-upward-outline"></i>
+            </div>
+            <svg id="svg" width="54" height="54" viewBox="0 0 54 54" preserveAspectRatio="xMinYMin meet">
+                <circle
+                    transform="rotate(-90, 27 , 27)"
+                    style="stroke-dasharray: 157, 157; stroke-dashoffset: 157;"
+                    cx="27"
+                    cy="27"
+                    r="25"
+                    fill="none"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke="var(--theme)"
+                />
+            </svg>
+        </div>
+    </a><div id="i18nlist"><div
+                style="font-size: 0;"
+                class="absolute left-0 top-0 z-50 rounded rounded-tl-none rounded-bl-none bg-white p-1.5 shadow-custom dark:bg-darkBgAccent"
+            >
+                <input type="checkbox" name="i18nlist-input" id="i18nlist-checkbox" />
+                <label for="i18nlist-checkbox">
+                    <i class="eva eva-globe-outline cursor-pointer text-xl leading-none group-hover:hidden"></i>
+                </label>
+                <ul class="hidden border border-transparent pb-0 group-hover:block"><li class="mb-1.5 cursor-pointer last:mb-0">
+                            <a data-no-swup href="https://hugo-theme-luna.imiku.me/en-us/2022/05/02/shortcodes.html/" title="切换语言到 English"><img class="w-6 cursor-pointer rounded-sm" src="/images/i18n/en-us.svg" alt="en-us" />
+                            </a>
+                        </li></ul>
+            </div></div><noscript>
+    <style>
+        .gallery-image,
+        .dark-mode-switch,
+        #run-time,
+        [data-clipboard-text],
+        [data-lazyload] {
+            display: none;
+        }
+        #back-top {
+            opacity: 1;
+        }
+    </style>
+</noscript>
+</body>
+</html>
